@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+a, p, i, b, span, h1, h2, h3, h4, h5 {
+    color: white;
+}
+
+body {
+    background: linear-gradient(#704269, #424663);
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-center {
+    max-width: 1024px;
+}
+
+.header {
+    width: 100%;
+    height: 300px;
+}
+
+.live-feed {
+    border:5px solid rgba(255,255,255, 0.2);
+    border-radius: 2px;
+}
