@@ -1,7 +1,10 @@
 const url = "http://localhost:8080";
 
 let msgSender = document.querySelector('.msg-sender');
+let input = msgSender.querySelector('textarea');
+let length = msgSender.querySelector('.length');
 
+let uniqueTweet = document.querySelector('.uniq-tweet');
 
 
 function enableTweets() {
@@ -35,16 +38,17 @@ function updateMessage(msg, duration) {
 }
 
 function sendMessage() {
-    let input = msgSender.querySelector('textarea');
-    let length = msgSender.querySelector('.length');
-
     if (input.value != "" && length.value > 0){
         updateMessage(input.value, length.value);
         input.value = "";
     }
 }
 
-
+function showTweet() {
+    if (uniqueTweet.value != "") {
+        console.log(uniqueTweet.value);
+    }
+}
 
 
 function showResponse(res) {

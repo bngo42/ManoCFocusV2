@@ -29,6 +29,7 @@ body {
 hr {
     border: 1px solid rgba(255,255,255,0.3);
     margin: 1em 0;
+    width: 100%;
 }
 
 .hidden { opacity: 0; }
@@ -40,10 +41,12 @@ hr {
 .d-flex { display: flex; }
 .d-flex.justify-start { justify-content: flex-start; }
 .d-flex.justify-center { justify-content: center; }
+.d-flex.justify-sbetween { justify-content: space-between; }
+.d-flex.justify-saround { justify-content: space-around; }
 .d-flex.justify-end { justify-content: flex-end; }
 
 .d-flex.row { flex-direction: row; }
-.d-flex.row-reverse { flex-direction: row-reverse; }
+.d-flex .row-reverse { flex-direction: row-reverse; }
 
 .d-flex.col { flex-direction: column; }
 .d-flex.col-reverse { flex-direction: column-reverse; }

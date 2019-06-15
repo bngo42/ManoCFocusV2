@@ -3,6 +3,10 @@ const refreshRate = 500;
 
 let msgAlert = document.querySelector('.message-alert');
 
+let tweetBox = document.querySelector('.tweet-box');
+let tweetUsername = tweetBox.querySelector('.name');
+let tweetContent = tweetBox.querySelector('.tweet-content');
+
 let panel = document.querySelector('.social-panel');
 let panelText = panel.querySelector('.text-overlay');
 let panelEnabled = false, panelIndex = 0, contentIndex = 0;
@@ -91,6 +95,22 @@ function serialize(obj) {
         str.push(encodeURIComponent(p) + "=" + encodeURIComponent(obj[p]));
       }
     return str.join("&");
+}
+
+displayTweet("@ibobtouch", "Hello world !");
+
+function displayTweet(username, msg) {
+    return new Promise((resolve, reject) => {
+        if (msg == "" || username == "")
+            reject("No tweet data provided");
+        tweetUsername.innerHTML = username;
+        tweetContent.innerHTML = msg;
+        fadeIn(tweetBox).then(() => {
+            timeout(5000).then(() => {
+                fadeOut(tweetBox).then(resolve);
+            });
+        });
+    });
 }
 
 
