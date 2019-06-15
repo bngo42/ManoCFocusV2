@@ -8,13 +8,9 @@ html, body {
     height: 100%;
 }
 
-a, p, i, b, span, h1, h2, h3, h4, h5 {
-    color: white;
-}
 
 body {
     background: linear-gradient(#704269, #424663);
-    font-family: 'Roboto', sans-serif;
 }
 
 .content-center {
