@@ -1,24 +1,58 @@
 const url = "http://localhost:8080";
 
-let button = document.querySelector('#testing');
+let msgSender = document.querySelector('.msg-sender');
 
 
-function getState() {
-    request("GET", url + '/tweets/active').then(res => {
-       console.log(res);
-    });
-}
 
 function enableTweets() {
-    request("GET", url + '/tweets/on').then(res => {
-       console.log("tweet enabled");
-    });
+    request("GET", url + '/tweets/on')
+        .then(showResponse)
+        .catch(showError);
 }
 
 function disableTweets() {
-    request("GET", url + '/tweets/off').then(res => {
-       console.log("tweet disabled");
-    });
+    request("GET", url + '/tweets/off')
+        .then(showResponse)
+        .catch(showError);
+}
+
+function enableSocialPanel() {
+    request("GET", url + '/panel/on')
+        .then(showResponse)
+        .catch(showError);
+}
+
+function disableSocialPanel() {
+    request("GET", url + '/panel/off')
+        .then(showResponse)
+        .catch(showError);
+}
+
+function updateMessage(msg, duration) {
+    request("GET", url + '/message/update', {state: true, msg, duration})
+        .then(showResponse)
+        .catch(showError);
+}
+
+function sendMessage() {
+    let input = msgSender.querySelector('textarea');
+    let length = msgSender.querySelector('.length');
+
+    if (input.value != "" && length.value > 0){
+        updateMessage(input.value, length.value);
+        input.value = "";
+    }
+}
+
+
+
+
+function showResponse(res) {
+    showAlert(res, "success");
+}
+
+function showError(err) {
+    showAlert(err, "error");
 }
 
 function request(method, url, params = {}){

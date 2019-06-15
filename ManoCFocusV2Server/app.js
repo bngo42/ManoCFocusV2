@@ -9,33 +9,46 @@ app.listen(port);
 //Global Parameters
 let showTweets = false;
 let showMessage = {state: false, msg: "", duration: 1000};
+let showCard = false;
 
 
 app.get('/', (req, res) => {
-    res.send("Hello World !");
+    res.send({showTweets, showMessage, showCard});
 });
 
 app.get('/message/update', (req, res) => {
-    let state = req.query.state;
-    let msg = req.query.msg;
-    let duration = req.query.duration;
-    
-    showMessage.state = state;
-    if (duration)
-        showMessage.msg = duration;
-    if (msg)
+    if (!showMessage.state) {
+        let state = req.query.state;
+        let msg = req.query.msg;
+        let duration = parseInt(req.query.duration) * 1000;
+        
+        showMessage.state = state;
+        if (duration > 0)
+        showMessage.duration = duration;
+        if (msg)
         showMessage.msg = msg;
-    
-    if (state){
-        timeout(showMessage.duration).then(() => {
-            showMessage.state = false;
-        });
+        
+        if (state && msg != ""){
+            timeout(showMessage.duration).then(() => {
+                showMessage.state = false;
+                timeout(1000).then(() => { showMessage.msg = "" });
+            });
+            res.send('Message sent');
+        }
+    } else {
+        res.send("Already displaying message");
     }
 });
 
+app.get('/panel/:state', (req, res) => {
+    let state = req.params.state;
 
-app.get ('/tweets/active', (req, res) => {
-    res.send(showTweets ? 'Tweets are enabled' : 'Tweets are disabled');
+    if (state && state == 'on'){
+        showCard = true;
+    } else if (state && state == 'off') {
+        showCard = false;
+    }
+    res.send(`Panel ${(showCard) ? 'Activé' : 'Désactivé'}` || 'error');
 });
 
 app.get('/tweets/:state', (req, res) => {
@@ -46,7 +59,7 @@ app.get('/tweets/:state', (req, res) => {
     } else if (state && state == 'off') {
         showTweets = false;
     }
-    res.send('OK' || 'error');
+    res.send(`Tweets ${(showTweets) ? 'Activés' : 'Désactivés'}` || 'error');
 });
 
 

@@ -3,17 +3,42 @@
     <head>
         <title>Manonolita X Child Focus | Overlay</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/animate.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="../css/utility.css">
     </head>
     <body>
-        <div class="content-center ml-auto mr-auto">
-            <h1>Hello Overlay</h1>
-            <button class="valid" onclick="enableTweets()">enable Tweets</button>
-            <button class="invalid" onclick="disableTweets()">disable Tweets</button>
-            <button class="dark" onclick="getState()">get state</button>
-            <button class="light" onclick="getState()">get state</button>
+
+        <div class="alert animated hidden success"></div>
+
+        <div class="content-center ml-auto mr-auto p-1">
+            <h1 class="">Bonjour overlay</h1>
+            <div class="actions">
+                <div class="my-2">
+                    <label>Afficher les tweets</label><br>
+                    <button class="valid mr-1" onclick="enableTweets()">activer Tweets</button>
+                    <button class="invalid ml-1" onclick="disableTweets()">désactiver Tweets</button>
+                </div>
+                <div class="my-2">
+                    <label>Afficher le social-panel</label><br>
+                    <button class="valid mr-1" onclick="enableSocialPanel()">Afficher</button>
+                    <button class="invalid ml-1" onclick="disableSocialPanel()">Cacher</button>
+                </div>
+                <hr>
+                <div class="msg-sender" class="py-2">
+                    <label>Afficher un message</label><br>
+                    <textarea cols="80" rows="10" placeholder="Entrez votre message"></textarea><br>
+                    
+                    <label>Durée (sec)</label><br>
+                    <input class="length" type="number" value="3"><br>
+                    <button class="my-1 btn light" onclick="sendMessage()">Envoyer</button>
+                </div>
+            </div>
+            <div class="history">
+
+            </div>
         </div>
     </body>
+    <script src="../js/utility.js"></script>
     <script src="js/event.js"></script>
 </html>
