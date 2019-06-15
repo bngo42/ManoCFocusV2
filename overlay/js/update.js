@@ -6,6 +6,7 @@ let msgAlert = document.querySelector('.message-alert');
 let tweetBox = document.querySelector('.tweet-box');
 let tweetUsername = tweetBox.querySelector('.name');
 let tweetContent = tweetBox.querySelector('.tweet-content');
+let tweetRefresher = null, tweet_feed = [], feed_active = false;
 
 let panel = document.querySelector('.social-panel');
 let panelText = panel.querySelector('.text-overlay');
@@ -33,6 +34,43 @@ let panelDatas = [
         ]
     }
 ];
+
+
+refreshTweet();
+
+function refreshTweet() {
+    tweetRefresher = setInterval(() => {
+        retrieveTweets().then(res => {
+            let data = JSON.parse(res);
+            if (data.length > 0){
+                console.log('join data');
+                tweet_feed = tweet_feed.concat(data);
+            }
+            if (tweet_feed.length > 0 && !feed_active) {
+                feed_active = true;
+                animateTweets();
+                clearInterval(tweetRefresher);
+            }
+        }).catch(console.error);
+    }, 1000);
+
+}
+
+function animateTweets() {
+    if (!tweet_feed[0]){
+        feed_active = false;
+        refreshTweet();
+    }
+    displayTweet(tweet_feed[0].username, tweet_feed[0].content)
+    .then(() => {
+        tweet_feed = tweet_feed.shift();
+        if (tweet_feed.length == 0) {
+                feed_active = false;
+                refreshTweet();
+            }
+            animateTweets();
+        });
+}
 
 function panelAnimation() {
     updatePanelBackground(panelDatas[panelIndex].background);
@@ -62,6 +100,14 @@ let refresher = setInterval(() => {
         }
     }).catch(console.error);
 }, refreshRate);
+
+function retrieveTweets() {
+    return new Promise((resolve, reject) => {
+        request("GET", url + '/tweets')
+            .then(resolve)
+            .catch(reject);
+    });
+}
 
 function getStates() {
     return new Promise((resolve, reject) => {
@@ -97,16 +143,14 @@ function serialize(obj) {
     return str.join("&");
 }
 
-displayTweet("@ibobtouch", "Hello world !");
-
-function displayTweet(username, msg) {
+function displayTweet(username, msg, duration = 1000) {
     return new Promise((resolve, reject) => {
         if (msg == "" || username == "")
             reject("No tweet data provided");
         tweetUsername.innerHTML = username;
         tweetContent.innerHTML = msg;
         fadeIn(tweetBox).then(() => {
-            timeout(5000).then(() => {
+            timeout(duration).then(() => {
                 fadeOut(tweetBox).then(resolve);
             });
         });

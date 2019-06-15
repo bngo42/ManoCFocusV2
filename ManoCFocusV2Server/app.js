@@ -8,15 +8,17 @@ app.use(cors());
 app.listen(port);
 
 const search_limit = 20;
+const trackedWord = 'putain';
+
 let search_count = 0;
 let tweets = new twitter({
-    consumer_key: '2g2I3k9IigJPDW2fSg6gDGagw',
-    consumer_secret: '8WgDHbcfk3NVWiXtJFdHEnekqYSRdE55VCC5qfGo2DgRPdCQzA',
-    token: '62844479-4KAdVjdocQlah9RklJDltoKNQ7EgjcnkpQxRU7qhu',
-    token_secret: 'Fje4ipPlxCZX28Oi0moqOI3JZIb4wFP4RUDR6ZILBpn4m'
+    consumer_key: process.env.consumer_key || '2g2I3k9IigJPDW2fSg6gDGagw',
+    consumer_secret: process.env.consumer_secret || '8WgDHbcfk3NVWiXtJFdHEnekqYSRdE55VCC5qfGo2DgRPdCQzA',
+    token: process.env.token || '62844479-4KAdVjdocQlah9RklJDltoKNQ7EgjcnkpQxRU7qhu',
+    token_secret: process.env.token_secret || 'Fje4ipPlxCZX28Oi0moqOI3JZIb4wFP4RUDR6ZILBpn4m'
 });
+let tweets_feed = [];
 
-const trackedWord = 'sah';
 
 tweets.untrackAll();
 tweets.language('fr');
@@ -26,14 +28,18 @@ tweets.on('tweet', tweet => {
     if (search_count >= search_limit){
         tweets.untrack(trackedWord);
         console.log(`Stop tracking ${trackedWord}`);
-        timeout(10000).then(() => {
+        timeout(30000).then(() => {
             tweets.track(trackedWord);
             search_count = 0;
             console.log(`Started tracking ${trackedWord}`);
         });
     }
     if (!tweet.retweeted_status){
-        console.log(`@${tweet.user.screen_name}:\n${tweet.text}`);
+        console.log("Getting tweet !");
+        tweets_feed.push({
+            username: tweet.user.screen_name,
+            content: tweet.text
+        });
     }
 });
 
@@ -44,7 +50,10 @@ let showCard = false;
 
 
 
-
+app.get('/tweets', (req, res) => {
+    res.send(tweets_feed);
+    tweets_feed = [];
+});
 
 app.get('/', (req, res) => {
     res.send({showTweets, showMessage, showCard});
