@@ -14,25 +14,29 @@
         <div class="content-center ml-auto mr-auto p-1">
             <h1 class="">Bonjour overlay</h1>
             <div class="actions">
-                <div class="d-flex col">
-                    <h3 class="mt-1">Afficher les tweets</h3>
-                    <i>Boucle à l'infini sur différent tweets</i>
-                    <div class="d-flex row mt-2">
-                        <button class="valid mr-1" onclick="enableTweets()">activer Tweets</button>
-                        <button class="invalid ml-1" onclick="disableTweets()">désactiver Tweets</button>
+                <div class="tweets-actions d-flex row justify-sbetween">
+                    <div class="d-flex col">
+                        <h3 class="mb-1">Actions Tweets</h3>
+                        <div class="d-flex row mt-2">
+                            <div class="d-flex col">
+                                <h3>Afficher un tweet via id</h3>
+                                <i>Affiche à l'écran le tweet specifie</i>
+                                <textarea cols="55" rows="0" class="uniq-tweet mt-1" placeholder="Entrez l'url d'un tweet"></textarea>
+                                <button class="dark my-1" onclick="showTweet()">Afficher le tweet</button>
+                            </div>
+                        </div>
                     </div>
-                    <div class="d-flex row my-2">
-                        <div class="d-flex col">
-                            <h3>Afficher un tweet via id</h3>
-                            <i>Affiche à l'écran un seul tweet</i>
-                            <textarea cols="55" rows="0" class="uniq-tweet mt-1" placeholder="Entrez l'id d'un tweet"></textarea>
-                            <button class="dark my-1" onclick="showTweet()">Afficher le tweet</button>
+                    <div class="tweets-list d-flex col">
+                        <h3>Cliquez sur un tweet pour l'afficher sur le live</h3>
+                        <div class="tweet-item hidden">
+                            <div class="tweet-item-name"></div>
+                            <div class="tweet-item-content"></div>
                         </div>
                     </div>
                 </div>
                 <hr>
                 <div class="my-2 d-flex col">
-                    <h3>Afficher le social-panel</h3>
+                    <h3>Actions social-panel</h3>
                     <div class="d-flex row my-1">
                         <button class="valid mr-1" onclick="enableSocialPanel()">Afficher</button>
                         <button class="invalid ml-1" onclick="disableSocialPanel()">Cacher</button>
@@ -40,7 +44,7 @@
                 </div>
                 <hr>
                 <div class="msg-sender" class="py-2">
-                    <h3 class="f-width">Afficher un message</h3><br>
+                    <h3 class="f-width">Actions message</h3><br>
                     <textarea cols="80" rows="10" placeholder="Entrez votre message"></textarea><br>
                     
                     <h3 class="f-width">Durée (sec)</h3><br>

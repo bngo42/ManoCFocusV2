@@ -38,6 +38,9 @@ hr {
 .f-width { max-width: 100%; }
 .f-height { max-height: 100%; }
 
+.mid-width { max-width: 50%; }
+.mid-height { max-height: 50%; }
+
 .d-flex { display: flex; }
 .d-flex.justify-start { justify-content: flex-start; }
 .d-flex.justify-center { justify-content: center; }

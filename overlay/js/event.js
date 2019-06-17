@@ -6,17 +6,22 @@ let length = msgSender.querySelector('.length');
 
 let uniqueTweet = document.querySelector('.uniq-tweet');
 
+function retrieveTweets() {
+    return new Promise((resolve, reject) => {
+        let req_headers = new Headers({
+            'Access-Control-Allow-Origin': '*'
+        });
 
-function enableTweets() {
-    request("GET", url + '/tweets/on')
-        .then(showResponse)
-        .catch(showError);
-}
+        let options = {
+            headers : req_headers,
+            method: 'GET',
+            mode: 'cors'
+        };
 
-function disableTweets() {
-    request("GET", url + '/tweets/off')
-        .then(showResponse)
-        .catch(showError);
+        fetch(url + '/tweets/', options)
+            .then(resolve)
+            .catch(reject);
+    });
 }
 
 function enableSocialPanel() {
@@ -44,12 +49,45 @@ function sendMessage() {
     }
 }
 
-function showTweet() {
-    if (uniqueTweet.value != "") {
-        console.log(uniqueTweet.value);
+setInterval(() => {
+    retrieveTweets().then(response => {
+        response.json().then(res => {
+            if (res.length > 0)
+                res.forEach(addTweet);
+        });
+    }).catch(console.error);
+}, 1000);
+
+function addTweet(data) {
+
+    let username = data.username;
+    let msg = data.content;
+
+    if (username && msg) {
+        let tweetBox = document.querySelector('.tweet-item');
+        let newBox = tweetBox.cloneNode(true);
+
+        if (newBox) {
+            let name = newBox.querySelector('.tweet-item-name');
+            let content = newBox.querySelector('.tweet-item-content');
+            let holder = document.querySelector('.tweets-list');
+
+            name.innerHTML = username;
+            content.innerHTML = msg;
+
+            newBox.onclick = () => {
+                console.log(data);
+                request('GET', url + '/tweets/stack', {username, content})
+                    .then(res => {
+                        newBox.remove();
+                    })
+                    .catch(console.error);
+            };
+            newBox.classList.remove('hidden');
+            holder.append(newBox);
+        }
     }
 }
-
 
 function showResponse(res) {
     showAlert(res, "success");

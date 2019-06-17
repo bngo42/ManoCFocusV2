@@ -18,6 +18,7 @@ let tweets = new twitter({
     token_secret: process.env.token_secret || 'Fje4ipPlxCZX28Oi0moqOI3JZIb4wFP4RUDR6ZILBpn4m'
 });
 let tweets_feed = [];
+let tweets_stack = [];
 
 
 tweets.untrackAll();
@@ -48,7 +49,16 @@ let showTweets = false;
 let showMessage = {state: false, msg: "", duration: 1000};
 let showCard = false;
 
+app.get('/tweets/stack', (req, res) => {
 
+    let username = req.query.username;
+    let content = req.query.content;
+
+    if (username && content) {
+        tweets_stack.push({username, content});
+        res.send("data added !");
+    }
+});
 
 app.get('/tweets', (req, res) => {
     res.send(tweets_feed);
@@ -56,7 +66,13 @@ app.get('/tweets', (req, res) => {
 });
 
 app.get('/', (req, res) => {
-    res.send({showTweets, showMessage, showCard});
+    res.send({
+        showTweets,
+        showMessage,
+        showCard,
+        tweets: tweets_stack
+    });
+    if (tweets_stack.length > 0) { tweets_stack = []; }
 });
 
 app.get('/message/update', (req, res) => {
