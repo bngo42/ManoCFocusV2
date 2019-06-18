@@ -6,7 +6,7 @@ let msgAlert = document.querySelector('.message-alert');
 let tweetBox = document.querySelector('.tweet-box');
 let tweetUsername = tweetBox.querySelector('.name');
 let tweetContent = tweetBox.querySelector('.tweet-content');
-let tweetRefresher = null, tweet_feed = [], feed_active = false;
+let tweetRefresher = null, tweet_feed = [], tweet_stack = [], displayActive = false;
 
 let panel = document.querySelector('.social-panel');
 let panelText = panel.querySelector('.text-overlay');
@@ -35,41 +35,23 @@ let panelDatas = [
     }
 ];
 
+// ----------------------------- MAIN ------------------------------------------------
 
 refreshTweet();
 
+// ----------------------------- MAIN ------------------------------------------------
+
 function refreshTweet() {
     tweetRefresher = setInterval(() => {
-        retrieveTweets().then(res => {
-            let data = JSON.parse(res);
-            if (data.length > 0){
-                console.log('join data');
-                tweet_feed = tweet_feed.concat(data);
-            }
-            if (tweet_feed.length > 0 && !feed_active) {
-                feed_active = true;
-                animateTweets();
-                clearInterval(tweetRefresher);
-            }
-        }).catch(console.error);
-    }, 1000);
-
-}
-
-function animateTweets() {
-    if (!tweet_feed[0]){
-        feed_active = false;
-        refreshTweet();
-    }
-    displayTweet(tweet_feed[0].username, tweet_feed[0].content)
-    .then(() => {
-        tweet_feed = tweet_feed.shift();
-        if (tweet_feed.length == 0) {
-                feed_active = false;
-                refreshTweet();
-            }
-            animateTweets();
-        });
+        if (!displayActive && tweet_feed.length > 0 && tweet_feed[0]) {
+            displayActive = true;
+            displayTweet(tweet_feed[0].username, tweet_feed[0].content, 5000)
+            .then(() => {
+                tweet_feed.shift();
+                displayActive = false;
+            }).catch(console.erorr);
+        }
+    },100);
 }
 
 function panelAnimation() {
@@ -97,17 +79,10 @@ let refresher = setInterval(() => {
         if (data) {
             updateAlerter(data.showMessage.msg, data.showMessage.state);
             updatePanel(data.showCard);
+            tweet_feed = tweet_feed.concat(JSON.parse(data.tweets));
         }
     }).catch(console.error);
 }, refreshRate);
-
-function retrieveTweets() {
-    return new Promise((resolve, reject) => {
-        request("GET", url + '/tweets')
-            .then(resolve)
-            .catch(reject);
-    });
-}
 
 function getStates() {
     return new Promise((resolve, reject) => {
@@ -143,17 +118,22 @@ function serialize(obj) {
     return str.join("&");
 }
 
-function displayTweet(username, msg, duration = 1000) {
+
+function displayTweet(username, msg, duration) {
     return new Promise((resolve, reject) => {
         if (msg == "" || username == "")
             reject("No tweet data provided");
         tweetUsername.innerHTML = username;
         tweetContent.innerHTML = msg;
+
         fadeIn(tweetBox).then(() => {
             timeout(duration).then(() => {
-                fadeOut(tweetBox).then(resolve);
+                fadeOut(tweetBox).then(() => {
+                    timeout(1000).then(resolve);
+                });
             });
-        });
+        }).catch(reject);
+
     });
 }
 

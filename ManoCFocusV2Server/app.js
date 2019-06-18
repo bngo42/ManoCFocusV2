@@ -49,15 +49,15 @@ let showTweets = false;
 let showMessage = {state: false, msg: "", duration: 1000};
 let showCard = false;
 
-app.get('/tweets/stack', (req, res) => {
 
-    let username = req.query.username;
-    let content = req.query.content;
-
-    if (username && content) {
-        tweets_stack.push({username, content});
-        res.send("data added !");
-    }
+app.get('/', (req, res) => {
+    res.send({
+        showTweets,
+        showMessage,
+        showCard,
+        tweets: JSON.stringify(tweets_stack)
+    });
+    if (tweets_stack.length > 0) { tweets_stack = []; }
 });
 
 app.get('/tweets', (req, res) => {
@@ -65,14 +65,15 @@ app.get('/tweets', (req, res) => {
     tweets_feed = [];
 });
 
-app.get('/', (req, res) => {
-    res.send({
-        showTweets,
-        showMessage,
-        showCard,
-        tweets: tweets_stack
-    });
-    if (tweets_stack.length > 0) { tweets_stack = []; }
+app.get('/tweets/stack', (req, res) => {
+    let username = req.query.username;
+    let content = req.query.content;
+
+    if (username && content) {
+        tweets_stack.push({username, content});
+        console.log(tweets_stack);
+        res.send("data added !");
+    }
 });
 
 app.get('/message/update', (req, res) => {

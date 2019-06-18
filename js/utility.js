@@ -53,8 +53,7 @@ function fadeOut(element) {
 
 function timeout(duration) {
     return new Promise((resolve, reject) => {
-        let timer = setTimeout(() => {
-            clearInterval(timer);
+        setTimeout(() => {
             resolve();
         }, duration);
     });

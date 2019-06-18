@@ -18,7 +18,7 @@ function retrieveTweets() {
             mode: 'cors'
         };
 
-        fetch(url + '/tweets/', options)
+        fetch(url + '/tweets', options)
             .then(resolve)
             .catch(reject);
     });
@@ -70,14 +70,14 @@ function addTweet(data) {
         if (newBox) {
             let name = newBox.querySelector('.tweet-item-name');
             let content = newBox.querySelector('.tweet-item-content');
-            let holder = document.querySelector('.tweets-list');
+            let holder = document.querySelector('.tweets-holder');
 
-            name.innerHTML = username;
+            name.innerHTML = '@' + username;
             content.innerHTML = msg;
 
             newBox.onclick = () => {
                 console.log(data);
-                request('GET', url + '/tweets/stack', {username, content})
+                request('GET', url + '/tweets/stack', {username, content: data.content})
                     .then(res => {
                         newBox.remove();
                     })
