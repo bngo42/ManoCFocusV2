@@ -106,6 +106,15 @@ body {
     flex-direction: column;
 }
 
+.parallaxer .timer {
+    display: inline-block;
+    padding: 0 0.8em;
+    line-height: 60px;
+    background: url('../img/white-banner.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: #323268;
+}
 
 .center-content {
     max-width: 1200px;

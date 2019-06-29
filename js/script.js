@@ -6,7 +6,6 @@ let scroll = window.pageYOffset;
 
 
 // ----------------------- MAIN -----------------------
-    console.log(navbarTop);
     updateNavBar();
 // ----------------------------------------------------
 

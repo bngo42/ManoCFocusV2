@@ -5,6 +5,7 @@
         <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/utility.css">
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/moment.js"></script>
         <script src="https://embed.twitch.tv/embed/v1.js"></script>
     </head>
     <body>
@@ -18,11 +19,11 @@
             <div class="parallaxer">
                 <div class="item" data-offset="120" data-src="img/layer1.png" data-ratio="0.9"></div>
                 <div class="item" data-offset="20" data-src="img/layer2.png" data-ratio="0.8"></div>
-                <div class="item" data-offset="20" data-src="img/layer4.png" data-ratio="0.4"></div>
                 <div class="item logo" data-offset="20"data-ratio="1.2">
                     <img width="40%" src="img/logo.png"/>
-                    <div class="timer">00 : 00 : 00</div>
+                    <h1 class="timer">DIMANCHE 10 NOVEMBRE</h1>
                 </div>
+                <div class="item" data-offset="20" data-src="img/layer4.png" data-ratio="0.4"></div>
                 <div class="item" data-offset="-100" data-src="img/layer5.png" data-ratio="0"></div>
             </div>
         </div>
@@ -36,22 +37,31 @@
                     <div class="progress-bar">
                         <div class="bar-fill"></div>
                     </div>
+                    <div>
+                        <h4 class="align-center mt-3">Vous souhaitez faire un don ?</h4>
+                    </div>
                 </div>
             </div>
 
-            <div id="a-propos" class="section"></div>
+            <div id="a-propos" class="section">
+                <h3 class="title banner">Quel est le but de cet évènement ?</h3>
+            </div>
 
-            <div id="social" class="section"></div>
+            <div id="social" class="section">
+                <h3 class="title banner">Vous en parlez</h3>
+            </div>
             
-            <div id="nos-partenaires" class="section"></div>
+            <div id="nos-partenaires" class="section">
+                <h3 class="title banner">Nos partenaires</h3>
+            </div>
         </div>
         <script src="js/script.js"></script>
         <script type="text/javascript">
             new Twitch.Embed("twitch-embed", {
               width: "100%",
               height: 480,
-              layout: "video",
-              channel: "lestream"
+              channel: "lestream",
+              layout: "video"
             });
           </script>
     </body>
