@@ -103,6 +103,7 @@ body {
     text-align: center;
     align-items: center;
     flex-direction: column;
+    animation: float 5s ease-in-out infinite;
 }
 
 .parallaxer .timer {
@@ -172,5 +173,26 @@ body {
 }
 
 #live-stream .steps li.locked{ 
-    opacity: 0.2;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+
+
+
+/* --------------- ANIMATIONS ------------------- */
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
