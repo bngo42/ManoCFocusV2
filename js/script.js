@@ -9,7 +9,7 @@ items.forEach(item => {
     }
     item.style.background = `url('${item.dataset.src}')`;
     item.style.backgroundRepeat = 'no-repeat';
-    item.style.backgroundSize = 'cover';
+    item.style.backgroundSize = 'contain';
     item.style.backgroundPosition = 'center';
     item.style.top = `${((scroll - offset) * item.dataset.ratio)}px`;
 });
@@ -18,6 +18,6 @@ items.forEach(item => {
 window.addEventListener('scroll', e => {
     scroll = window.pageYOffset;
     items.forEach(item => {
-        item.style.top = `${(-(scroll - offset) * item.dataset.ratio)}px`;
+        item.style.top = `${((scroll - offset) * item.dataset.ratio)}px`;
     });
 });
