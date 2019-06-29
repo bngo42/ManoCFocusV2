@@ -16,14 +16,34 @@ html {
 	scroll-behavior: smooth;
 }
 
+p {
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
 body {
     background-color: #dbdbdb;
     font-family: 'Quicksand', sans-serif;
 }
 
+.hide {
+    visibility: hidden;
+}
+
 .section {
     width: 100%;
-    max-height: 1200px;
+}
+
+.title.banner {
+    background: url('../img/left-arrow.png') no-repeat left top / contain, 
+                url('../img/right-arrow.png') no-repeat right top / contain;
+    background-color: #323268;
+    color: white;
+    height: 50px;
+    max-width: 500px;
+    text-align: center;
+    line-height: 50px;
+    margin: 2em auto;
 }
 
 .navbar-top {
@@ -78,6 +98,12 @@ body {
 }
 
 .parallaxer .item.logo{
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 
@@ -99,14 +125,22 @@ body {
     border-radius: 2px;
 }
 
-.title.banner {
-    background: url('../img/left-arrow.png') no-repeat left top / contain, 
-                url('../img/right-arrow.png') no-repeat right top / contain;
+#live-stream .goal-labels {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0,0,0,0.5);
+}
+
+#live-stream .progress-bar {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin: 1em 0;
+    height: 40px;
+    overflow: hidden;
+}
+
+#live-stream .progress-bar .bar-fill {
     background-color: #323268;
-    color: white;
-    height: 50px;
-    max-width: 500px;
-    text-align: center;
-    line-height: 50px;
-    margin: 2em auto;
+    width: 50%;
+    height: 100%;
 }

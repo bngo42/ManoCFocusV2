@@ -9,27 +9,41 @@
     </head>
     <body>
         <ul class="navbar-top fixed">
-            <li><a href="#live-stream">Lien 1</a></li>
-            <li><a href="#">Lien 2</a></li>
-            <li><a href="#">Lien 3</a></li>
-            <li><a href="#">Lien 4</a></li>
+            <li><a href="#live-stream">LE DIRECT</a></li>
+            <li><a href="#a-propos">A PROPOS</a></li>
+            <li><a href="#social">SOCIAL</a></li>
+            <li><a href="#nos-partenaires">NOS PARTENAIRE</a></li>
         </ul>
         <div class="section">
             <div class="parallaxer">
                 <div class="item" data-offset="120" data-src="img/layer1.png" data-ratio="0.9"></div>
                 <div class="item" data-offset="20" data-src="img/layer2.png" data-ratio="0.8"></div>
                 <div class="item" data-offset="20" data-src="img/layer4.png" data-ratio="0.4"></div>
-                <div class="item logo" data-offset="10"data-ratio="1.2">
-                    <img width="100%" src="img/layer3.png"/>
+                <div class="item logo" data-offset="20"data-ratio="1.2">
+                    <img width="40%" src="img/logo.png"/>
+                    <div class="timer">00 : 00 : 00</div>
                 </div>
                 <div class="item" data-offset="-100" data-src="img/layer5.png" data-ratio="0"></div>
             </div>
         </div>
         <div class="center-content">
-            <div id="live-stream" class="section" style="height: 1500px;">
-                <h3 class="title banner">Live stream</h3>
+            <div id="live-stream" class="section">
+                <h3 class="title banner">REGARDER LE DIRECT</h3>
                 <div id="twitch-embed"></div>
+                <div class="donation-goal my-5">
+                    <p>Suivez en direct la progression des donations:</p>
+                    <div class="goal-labels mt-1"><div class="min">0$</div><div class="max">2 000$</div></div>
+                    <div class="progress-bar">
+                        <div class="bar-fill"></div>
+                    </div>
+                </div>
             </div>
+
+            <div id="a-propos" class="section"></div>
+
+            <div id="social" class="section"></div>
+            
+            <div id="nos-partenaires" class="section"></div>
         </div>
         <script src="js/script.js"></script>
         <script type="text/javascript">
@@ -37,7 +51,7 @@
               width: "100%",
               height: 480,
               layout: "video",
-              channel: "monstercat"
+              channel: "lestream"
             });
           </script>
     </body>

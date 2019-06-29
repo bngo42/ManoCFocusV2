@@ -19,7 +19,7 @@ items.forEach(item => {
         item.style.background = `url('${item.dataset.src}')`;
     }
     item.style.backgroundRepeat = 'no-repeat';
-    item.style.backgroundSize = 'contain';
+    item.style.backgroundSize = 'cover';
     item.style.backgroundPosition = 'bottom';
     item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
 });
