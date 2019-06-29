@@ -31,14 +31,15 @@
             <div id="live-stream" class="section">
                 <h3 class="title banner">REGARDER LE DIRECT</h3>
                 <div id="twitch-embed"></div>
-                <div class="donation-goal my-5">
-                    <p>Suivez en direct la progression des donations:</p>
-                    <div class="goal-labels mt-1"><div class="min">0$</div><div class="max">2 000$</div></div>
+                <div class="donation-goal my-2">
+                    <p class="title small">Suivez en direct la progression des donations:</p>
+                    <div class="goal-labels mt-1"><div class="min">0€</div><div class="max">3 000€</div></div>
                     <div class="progress-bar">
                         <div class="bar-fill"></div>
                     </div>
-                    <div>
-                        <h4 class="align-center mt-3">Vous souhaitez faire un don ?</h4>
+                    <div class="donation d-flex row just-between">
+                        <h4 class="align-center">Vous souhaitez aider l'association en faisant un don ? Cliquez sur le bouton suivant</h4>
+                        <a href="http://www.childfocus.be/fr/donation" class="btn" target="_blank">FAIRE UN DON</a>
                     </div>
                 </div>
             </div>
@@ -60,7 +61,7 @@
             new Twitch.Embed("twitch-embed", {
               width: "100%",
               height: 480,
-              channel: "lestream",
+              channel: "manonolita",
               layout: "video"
             });
           </script>

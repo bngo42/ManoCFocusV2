@@ -1,3 +1,16 @@
+.d-flex { display: flex; }
+
+.just-start { justify-content: flex-start; }
+.just-end { justify-content: flex-end; }
+.just-center { justify-content: center; }
+.just-between { justify-content: space-between; }
+.just-around { justify-content: space-around; }
+
+.d-flex.row { flex-direction: row; }
+.d-flex.rowreverse { flex-direction: row-reverse; }
+.d-flex.col { flex-direction: column; }
+.d-flex.colrever { flex-direction: column-reverse; }
+
 .bd-1-red { border: 1px solid red}
 .bd-10-red { border: 10px solid red}
 
@@ -105,3 +118,19 @@
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
+
+.btn {
+    padding: 0.5em;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #323268;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #3d3d80;
+}
