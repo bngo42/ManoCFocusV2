@@ -1,47 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Manonolita X Child Focus</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet"> 
+        <title>Manonolita & Child Focus</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/utility.css">
     </head>
     <body>
-    <svg preserveAspectRatio="none" viewBox="0 0 640 640" height="100%" width="100%" style="z-index:-99;position:fixed;left: 0; right: 0; top: auto; bottom:0;">
-       <defs>
-           <path d="M0 0L640 0L640 640L0 640L0 0Z" id="a1Yjh3gVM"></path>
-           <linearGradient id="gradientf2tJXqdbDx" gradientUnits="userSpaceOnUse" x1="640" y1="0" x2="0" y2="640">
-               <stop style="stop-color: #704269;stop-opacity: 1" offset="0%"></stop>
-               <stop style="stop-color: #34374d;stop-opacity: 1" offset="100%"></stop>
-           </linearGradient>
-       </defs>
-       <g>
-           <g>
-               <g>
-                 <path d="M0 0L640 0L640 640L0 640L0 0Z" id="a3pRb4WBXL" fill="white" fill-opacity="1" filter="url(#shadow9721125)"></path>
-               </g>
-               <use xlink:href="#a1Yjh3gVM" opacity="1" fill="url(#gradientf2tJXqdbDx)"></use>
-           </g>
-       </g>
-    </svg>
-        <div class="content-center ml-auto mr-auto">
-            <div class="header d-flex justify-center row">
-                <div class="logo py-4 f-width">
-                    <img width="100%" class="" src="img/logo.png"/>
-                </div>
-            </div>
-            <div class="p-1 embed-live f-width b-1-blue">
-                <h1 class="text-center mb-1">Live feed</h1>
-                <div class="live-feed" id="twitch-embed"></div>
+        <div class="section">
+            <div class="parallaxer">
+                <div class="item" data-src="img/layer1.png" data-ratio="0"></div>
+                <div class="item" data-src="img/layer2.png" data-ratio="0.4"></div>
+                <div class="item" data-src="img/layer3.png" data-ratio="0.6"></div>
+                <div class="item" data-src="img/layer4.png" data-ratio="0.8"></div>
+                <div class="item" data-src="img/layer5.png" data-ratio="1"></div>
             </div>
         </div>
-        <script src="https://embed.twitch.tv/embed/v1.js"></script>
-        <script type="text/javascript">
-            new Twitch.Embed("twitch-embed", {
-                width: "100%",
-                height: 480,
-                channel: "manonolita"
-            });
-        </script>
+        <div class="section"></div>
+        <script src="js/script.js"></script>
     </body>
 </html>

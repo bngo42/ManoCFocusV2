@@ -1,8 +1,0 @@
-body {
-    background: linear-gradient(#704269, #424663);
-}
-
-tweet-list, tweet-actions {
-    width: 50%;
-    border:1px solid red;
-}
