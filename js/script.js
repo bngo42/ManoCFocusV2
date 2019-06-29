@@ -34,7 +34,7 @@ window.addEventListener('scroll', e => {
 });
 
 function updateNavBar() {
-    if (scroll > 80) {
+    if (scroll > navbarTop.clientHeight) {
         if (!navbarTop.classList.contains('fixed'))
             navbarTop.classList.add('fixed');
     } else {

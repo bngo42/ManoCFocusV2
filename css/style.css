@@ -54,12 +54,11 @@ body {
     display: flex;
     padding: 1.5em;
     justify-content: center;
-    transition: 0.5s;
 }
 
 .navbar-top.fixed {
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navbar-top a {
@@ -163,4 +162,15 @@ body {
 #live-stream .donation {
     height: 50px;
     line-height: 50px;
+}
+
+
+#live-stream .steps li {
+    padding: 0.2em;
+    margin: 0.2em 0;
+    text-transform: uppercase;  
+}
+
+#live-stream .steps li.locked{ 
+    opacity: 0.2;
 }
