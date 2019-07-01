@@ -17,10 +17,12 @@ items.forEach(item => {
     item.style.backgroundRepeat = 'no-repeat';
     item.style.backgroundSize = 'cover';
     item.style.backgroundPosition = 'bottom';
-    item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
+    if (!isMobile()){
+        item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
+    }
 });
 
-if (isMobile()) {   
+if (!isMobile()) {   
     window.addEventListener('scroll', updateScroll);
     window.addEventListener('touchmove', updateScroll);
 }
