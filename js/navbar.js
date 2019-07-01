@@ -13,10 +13,12 @@ toggler.addEventListener('click', () => {
 
 function updateNavBar() {
     if (scroll > navbarTop.clientHeight) {
-        if (!navbarTop.classList.contains('fixed'))
-            navbarTop.classList.add('fixed');
+        if (!navbarTop.classList.contains('fixed')){
+            navbarTop.classList.add('fixed', 'slideInDown');
+        }
     } else {
-        if (navbarTop.classList.contains('fixed'))
-            navbarTop.classList.remove('fixed');
+        if (navbarTop.classList.contains('fixed')){
+            navbarTop.classList.remove('fixed', 'slideInDown');
+        }
     }
 }
