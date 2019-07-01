@@ -225,6 +225,7 @@ body {
 
 .about {
 }
+
 .about .informations {
     width: 80%;
     margin: 0 auto;
@@ -237,11 +238,40 @@ body {
 
 
 .socials {
-    border:1px solid blue;
 }
 
-.paterners {
-    border:1px solid yellow;
+.partners-list {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.partners .partner-box.hide {
+    display: none;
+}
+
+.partners .partner-box {
+    position: relative;
+    width: 300px;
+    background-color: #323268;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 5px;
+}
+
+.partners .partner-box .fab {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: white;
+}
+
+.partners .partner-box .fab {padding: 0.2em;}
+.partners .partner-box .fab.fa-twitter:hover { background-color: #1DA1F2;}
+.partners .partner-box .fab.fa-facebook:hover { background-color: #3C5A99;}
+.partners .partner-box .fab.fa-twitch:hover { background-color: #6441A4;}
+.partners .partner-box .fab.fa-youtube:hover { background-color: #FF0000;}
+
+.partners .partner-box .fab.hide {
+    display: none;
 }
 
 .footer {
