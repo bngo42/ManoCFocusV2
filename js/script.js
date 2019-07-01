@@ -1,8 +1,6 @@
-let navbarTop = document.querySelector('.navbar-top');
 let parallaxer = document.querySelector('.parallaxer');
 let items = parallaxer.querySelectorAll('.item');
 let scroll = window.pageYOffset;
-
 
 
 // ----------------------- MAIN -----------------------
@@ -24,21 +22,16 @@ items.forEach(item => {
 });
 
 
-window.addEventListener('scroll', e => {
+window.addEventListener('scroll', updateScroll);
+window.addEventListener('touchmove', updateScroll);
+
+function updateScroll() {
     scroll = window.pageYOffset;
-    items.forEach(item => {
-        item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
-    });
-
-   updateNavBar();
-});
-
-function updateNavBar() {
-    if (scroll > navbarTop.clientHeight) {
-        if (!navbarTop.classList.contains('fixed'))
-            navbarTop.classList.add('fixed');
-    } else {
-        if (navbarTop.classList.contains('fixed'))
-            navbarTop.classList.remove('fixed');
+    if (scroll <= parallaxer.clientHeight) {
+        items.forEach(item => {
+            item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
+        });
     }
+        
+   updateNavBar();
 }

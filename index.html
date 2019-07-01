@@ -3,6 +3,7 @@
     <head>
         <title>Manonolita & Child Focus</title>
         <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/b3afd8ad45.js"></script>
         <link rel="stylesheet" href="css/utility.css">
         <link rel="stylesheet" href="css/style.css">
         <script src="js/moment.js"></script>
@@ -15,11 +16,12 @@
             <li><a href="#social">SOCIAL</a></li>
             <li><a href="#nos-partenaires">NOS PARTENAIRE</a></li>
         </ul>
+        <div class="navbar-toggle"><span class="icon fas fa-bars"></span></div>
         <div class="section">
             <div class="parallaxer">
                 <div class="item" data-offset="120" data-src="img/layer1.png" data-ratio="0.9"></div>
                 <div class="item" data-offset="20" data-src="img/layer2.png" data-ratio="0.8"></div>
-                <div class="item logo" data-offset="20"data-ratio="1.2">
+                <div class="item logo floater" data-offset="20"data-ratio="1.1">
                     <img width="40%" src="img/logo.png"/>
                     <h1 class="timer">DIMANCHE 10 NOVEMBRE 2019</h1>
                 </div>
@@ -35,22 +37,23 @@
                     <p class="title small">Suivez en direct la progression des donations:</p>
                     <div class="goal-labels mt-1"><div class="min">0€</div><div class="max">3 000€</div></div>
                     <div class="progress-bar">
+                        <p class="progress-current">1 500€</p>
                         <div class="bar-fill"></div>
                     </div>
                     <div class="donation d-flex row just-between">
-                        <h4 class="align-center">Vous souhaitez aider l'association en faisant un don ? Cliquez sur le bouton</h4>
+                        <h4 class="align-center">Vous souhaitez aider l'association en faisant un don ?</h4>
                         <a href="http://www.childfocus.be/fr/donation" class="btn" target="_blank">FAIRE UN DON</a>
                     </div>
                     <p class="title small mt-2">Paliers des donations</p>
-                    <ul class="steps mt-2">
-                        <li class="">item 1 (débloqué)</li>
-                        <li class="">item 2 (débloqué)</li>
-                        <li class="locked">item 3 (débloquable à X€)</li>
-                        <li class="locked">item 4 (débloquable à X€)</li>
-                        <li class="locked">item 5 (débloquable à X€)</li>
-                        <li class="locked">item 6 (débloquable à X€)</li>
-                        <li class="locked">item 7 (débloquable à X€)</li>
-                    </ul>
+                        <ul class="steps show">
+                            <li class="">item 1 (débloqué)</li>
+                            <li class="">item 2 (débloqué)</li>
+                            <li class="locked">item 3 (débloquable à X€)</li>
+                            <li class="locked">item 4 (débloquable à X€)</li>
+                            <li class="locked">item 5 (débloquable à X€)</li>
+                            <li class="locked">item 6 (débloquable à X€)</li>
+                            <li class="locked">item 7 (débloquable à X€)</li>
+                        </ul>
                 </div>
             </div>
 
@@ -65,7 +68,10 @@
             <div id="nos-partenaires" class="section">
                 <h3 class="title banner">Nos partenaires</h3>
             </div>
+
+            <div class="footer">Site oueb fait par <a href="http://twitter.com/ibobtouch">ibobtouch</a>.</div>
         </div>
+        <script src="js/navbar.js"></script>
         <script src="js/script.js"></script>
         <script type="text/javascript">
             new Twitch.Embed("twitch-embed", {
