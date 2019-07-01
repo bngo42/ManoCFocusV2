@@ -7,20 +7,20 @@ let scroll = window.pageYOffset;
     updateNavBar();
 // ----------------------------------------------------
 
-if (!isMobile()) {   
-    items.forEach(item => {
-        if (!item.classList.contains('floating')){
-            item.classList.add('floating');
-        }
-        if (item.dataset.src){
-            item.style.background = `url('${item.dataset.src}')`;
-        }
-        item.style.backgroundRepeat = 'no-repeat';
-        item.style.backgroundSize = 'cover';
-        item.style.backgroundPosition = 'bottom';
-        item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
-    });
-   
+items.forEach(item => {
+    if (!item.classList.contains('floating')){
+        item.classList.add('floating');
+    }
+    if (item.dataset.src){
+        item.style.background = `url('${item.dataset.src}')`;
+    }
+    item.style.backgroundRepeat = 'no-repeat';
+    item.style.backgroundSize = 'cover';
+    item.style.backgroundPosition = 'bottom';
+    item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
+});
+
+if (isMobile()) {   
     window.addEventListener('scroll', updateScroll);
     window.addEventListener('touchmove', updateScroll);
 }
