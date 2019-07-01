@@ -266,7 +266,7 @@ body {
 /* --------------- MEDIA QUERIES ------------------- */
 
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
 
     body {
         text-align: center;
