@@ -12,10 +12,6 @@ a {
     text-decoration: none;
 }
 
-html {
-	scroll-behavior: smooth;
-}
-
 p {
     color: rgba(0, 0, 0, 0.8);
     font-weight: bold;
@@ -84,10 +80,10 @@ body {
     z-index: 99;
     padding: 0.2em;
     display: none;
-    cursor: pointer;
 }
 
 .navbar-toggle .icon{
+    cursor: pointer;
     float: right;
     font-size: 1.5em;
     width: 40px;
@@ -103,7 +99,7 @@ body {
 .parallaxer {
     position: relative;
     width: 100%;
-    height: 55vw;
+    height: 60vw;
     overflow: hidden;
     background: url('../img/background.png') no-repeat;
     background-position: center;
@@ -114,13 +110,17 @@ body {
     height: 100%;
 }
 
-.parallaxer .item.logo{
+.parallaxer .item .logo{
     color: white;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     flex-direction: column;
+}
+
+.parallaxer .item .logo img{
+    width: 50%;
 }
 
 .parallaxer .timer {
@@ -347,13 +347,13 @@ body {
     }
 
     .parallaxer {
-        height: 100vw;
+        height: 80vw;
     }
 
-    .parallaxer .item.logo img{
-        width: 80%;
+    .parallaxer .item .logo img{
+        width: 60%;
     }
-
+    
     .parallaxer .timer {
         padding: 0 0.5em;
         font-size: 15pt;
@@ -372,6 +372,13 @@ body {
 
     #live-stream .donation {
         line-height: 20px;
+    }
+
+    .partners .partner-box {
+        width: 100%;
+        max-width: 300px;
+        margin: 0.2em 0;
+        padding: 0.5em 1%;
     }
 
 
