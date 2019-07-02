@@ -8,6 +8,11 @@
 .just-between { justify-content: space-between; }
 .just-around { justify-content: space-around; }
 
+.item-start { align-items: flex-start; }
+.item-end { align-items: flex-end; }
+.item-center { align-items: center; }
+.item-baseline { align-items: baseline; }
+
 .d-flex.row { flex-direction: row; }
 .d-flex.row-reverse { flex-direction: row-reverse; }
 .d-flex.col { flex-direction: column; }

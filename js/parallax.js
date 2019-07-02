@@ -1,7 +1,7 @@
 let parallaxer = document.querySelector('.parallaxer');
 let items = parallaxer.querySelectorAll('.item');
 let scroll = window.pageYOffset;
-
+let timer;
 
 // ----------------------- MAIN -----------------------
     updateNavBar();
@@ -18,20 +18,23 @@ items.forEach(item => {
     item.style.backgroundSize = 'cover';
     item.style.backgroundPosition = 'bottom';
     if (!isMobile()){
-        item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
+        // item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
+        item.style.transform = `translate(0, ${((scroll - item.dataset.offset) * item.dataset.ratio)}px)`;
     }
 });
 
 if (!isMobile()) {   
     window.addEventListener('scroll', updateScroll);
-    window.addEventListener('touchmove', updateScroll);
+    window.webkitRequestAnimationFrame(updateScroll);
+    // window.addEventListener('touchmove', updateScroll);
 }
 
 function updateScroll() {
     scroll = window.pageYOffset;
     if (scroll <= parallaxer.clientHeight) {
         items.forEach(item => {
-            item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
+            // item.style.top = `${((scroll - item.dataset.offset) * item.dataset.ratio)}px`;
+            item.style.transform = `translate3d(0, ${((scroll - item.dataset.offset) * item.dataset.ratio)}px, 0)`;
         });
     }
         
