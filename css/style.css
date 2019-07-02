@@ -18,7 +18,7 @@ p {
 }
 
 body {
-    background-color: #dbdbdb;
+    background-color: #ededed;
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -238,6 +238,19 @@ body {
 
 
 .socials {
+}
+
+.socials .tweet-list {
+    border:1px solid red;
+    padding: 1em;
+}
+
+.socials .tweet-list .tweet-box {
+    width: 100%;
+    height: 250px;
+    background-color: white;
+    border-radius: 5px;
+    border-top: 15px solid #323268;
 }
 
 .partners-list {
