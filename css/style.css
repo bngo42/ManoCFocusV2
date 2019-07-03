@@ -267,6 +267,7 @@ body {
     align-content: center;
     height: 100%;
     width: 25%;
+    border-radius: 5px;
 }
 
 .tweet-list .tweet-box .tweet-content {
@@ -284,12 +285,15 @@ body {
 }
 
 .partners .partner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     width: 300px;
     background-color: #323268;
     padding: 1em;
     margin: 1em;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
 }
 
 
