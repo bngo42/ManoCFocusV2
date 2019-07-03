@@ -114,6 +114,10 @@
 .ml-4 { margin-left: 4em; }
 .ml-5 { margin-left: 5em; }
 
+.width-25 { width: 25%; }
+.width-50 { width: 50%; }
+.width-75 { width: 75%; }
+.width-100 { width: 100%; }
 
 .title { text-transform: uppercase; }
 

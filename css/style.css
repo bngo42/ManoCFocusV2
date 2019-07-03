@@ -223,9 +223,6 @@ body {
     color: rgba(0, 0, 0, 0.2);
 }
 
-.about {
-}
-
 .about .informations {
     width: 80%;
     margin: 0 auto;
@@ -236,21 +233,34 @@ body {
     border:1px solid red;
 }
 
-
-.socials {
-}
-
-.socials .tweet-list {
+.tweet-list {
     border:1px solid red;
     padding: 1em;
 }
 
-.socials .tweet-list .tweet-box {
-    width: 100%;
-    height: 250px;
+.tweet-list .tweet-box {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    max-width: 800px;
     background-color: white;
     border-radius: 5px;
     border-top: 15px solid #323268;
+}
+
+.tweet-list .tweet-box .avatar{
+    display: flex;
+    border-radius: 50%;
+    overflow:hidden;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    width: 25%;
+}
+
+.tweet-list .tweet-box .tweet-content {
+    width: 75%;
+    padding: 2em;
 }
 
 .partners-list {
@@ -270,6 +280,8 @@ body {
     margin: 1em;
     border-radius: 5px;
 }
+
+
 
 .partners .partner-box .fab {
     cursor: pointer;
@@ -385,6 +397,26 @@ body {
 
     #live-stream .donation {
         line-height: 20px;
+    }
+
+    .tweet-list .tweet-box {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 5px;
+    }
+    
+    .tweet-list .tweet-box .avatar{
+        border-radius: 50%;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
+        width: 25%;
+    }
+
+    .tweet-list .tweet-box .tweet-content {
+        padding: 0;
     }
 
     .partners .partner-box {
