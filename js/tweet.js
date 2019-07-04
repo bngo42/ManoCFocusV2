@@ -1,9 +1,16 @@
 let spinner = document.querySelector('.spinner');
 let tweetBox = document.querySelector('.tweet-list .tweet-box');
-let tweet_feed = [];
-let index = 0;
+
+let avatar = tweetBox.querySelector('.avatar img'),
+    content = tweetBox.querySelector('.tweet-content'),
+    username = content.querySelector('.username'),
+    text = content.querySelector('.text');
+
+let tweet_feed = [],
+    index = 0;
+
 setInterval(() => {
-    if (index == tweet_feed.length) {
+    if (tweet_feed.length == 0 || index >= (tweet_feed.length - 1)) {
         console.log("loading new tweets...");
         retrieveTweet().then(res => {
             if (res.length == 0){
@@ -17,7 +24,9 @@ setInterval(() => {
         });
     } else {
         index++;
-        updateTweet(tweet_feed[index]);
+        if (tweet_feed[index]){
+            updateTweet(tweet_feed[index]);
+        }
     }
 
     if (tweet_feed.length > 0 && !spinner.classList.contains("hide")) {
@@ -28,16 +37,13 @@ setInterval(() => {
 
 
 function updateTweet(data) {
-    let avatar = tweetBox.querySelector('.avatar img');
-    let content = tweetBox.querySelector('.tweet-content');
-    let username = content.querySelector('.username');
-    let text = content.querySelector('.text');
-
-    tweetBox.href = `http://twitter.com/${data.user.username}/status/${data.id_str}`;
-    avatar.src = replaceUrl(data.user.picture);
-    username.innerHTML = `@${data.user.username}`;
-    text.innerHTML = data.content;
-    tweetBox.classList.remove('hide');
+    if (data) {
+        tweetBox.href = `http://twitter.com/${data.user.username}/status/${data.id_str}`;
+        avatar.src = replaceUrl(data.user.picture);
+        username.innerHTML = `@${data.user.username}`;
+        text.innerHTML = data.content;
+        tweetBox.classList.remove('hide');
+    }
 }
 
 

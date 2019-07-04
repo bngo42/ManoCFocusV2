@@ -163,11 +163,13 @@
     }
 
     .d-flex.row-reverse {
-        flex-direction: column-reverse;
+        flex-direction: column;
         align-items: center;
     }
 
     .just-start, .just-end, .just-between, .just-around {
         justify-content: center;
     }
+
+    .align-left, .align-right { text-align: center; }
 }

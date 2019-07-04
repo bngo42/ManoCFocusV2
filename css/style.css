@@ -38,7 +38,7 @@ body {
 .title.banner {
     background: url('../img/left-arrow.png') no-repeat left top / contain, 
                 url('../img/right-arrow.png') no-repeat right top / contain;
-    background-color: #323268;
+    background-color: #3d3463;
     color: white;
     height: 50px;
     max-width: 500px;
@@ -135,7 +135,7 @@ body {
     background: url('../img/white-banner.png') no-repeat;
     background-position: center;
     background-size: contain;
-    color: #323268;
+    color: #3d3463;
     font-size: 20pt;
     
 }
@@ -192,7 +192,7 @@ body {
 }
 
 #live-stream .progress-bar .bar-fill {
-    background-color: #323268;
+    background-color: #3d3463;
     width: 0%;
     height: 100%;
     position: relative;
@@ -231,12 +231,17 @@ body {
 .about .informations {
     width: 80%;
     margin: 0 auto;
-    padding: 1em;
 }
 
-.about .informations .paragraph{
-    border:1px solid red;
+.about .informations .paragraph {
+    padding: 1em;
+    margin: 1em 0;
 }
+
+.about .informations .paragraph p{
+    color: rgba(0, 0, 0, 0.7);
+}
+
 
 .tweet-list {
     padding: 1em;
@@ -251,7 +256,7 @@ body {
     height: 180px;
     background-color: white;
     border-radius: 5px;
-    border-top: 10px solid #323268;
+    border-top: 10px solid #3d3463;
     cursor: pointer;
     color: rgba(0, 0, 0, 0.8);
 }
@@ -268,11 +273,13 @@ body {
     height: 100%;
     width: 25%;
     border-radius: 5px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .tweet-list .tweet-box .tweet-content {
     width: 75%;
-    padding: 2em;
+    padding: 0.5em;
 }
 
 .partners-list {
@@ -290,13 +297,11 @@ body {
     justify-content: space-between;
     position: relative;
     width: 300px;
-    background-color: #323268;
+    background-color: #3d3463;
     padding: 1em;
     margin: 1em;
     border-radius: 5px 5px 0 0;
 }
-
-
 
 .partners .partner-box .fab {
     cursor: pointer;
@@ -316,7 +321,7 @@ body {
 
 .footer {
     position:absolute;
-    background-color: #323268;
+    background-color: #3d3463;
     color: rgba(255, 255, 255, 0.8);
     font-weight: bold;
     left: 0;
@@ -338,7 +343,7 @@ body {
 .spinner > div {
 width: 18px;
 height: 18px;
-background-color: #323268;
+background-color: #3d3463;
 
 border-radius: 100%;
 display: inline-block;
