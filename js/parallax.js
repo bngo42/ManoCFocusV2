@@ -17,12 +17,12 @@ items.forEach(item => {
     item.style.backgroundRepeat = 'no-repeat';
     item.style.backgroundSize = 'cover';
     item.style.backgroundPosition = 'bottom';
-    item.style.transform = `translate(0, ${((scroll - item.dataset.offset) * item.dataset.ratio)}px)`;
+    if (!isMobile()){
+        item.style.transform = `translate(0, ${((scroll - item.dataset.offset) * item.dataset.ratio)}px)`;
+    }
 });
 
-if (isMobile()) {   
-    window.addEventListener('touchmove', updateScroll);
-} else {
+if (!isMobile()) {   
     window.addEventListener('scroll', updateScroll);
     window.addEventListener('wheel', updateScroll);
 }

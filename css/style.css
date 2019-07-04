@@ -113,7 +113,6 @@ body {
 .parallaxer .item {
     width: 100%;
     height: 100%;
-    image-rendering: crisp-edges;
 }
 
 .parallaxer .item .logo{
@@ -469,6 +468,7 @@ animation-delay: -0.16s;
         width: 100%;
         height: 400px;
         border-radius: 0;
+        border:none;
     }
     
     .tweet-list .tweet-box .avatar{
