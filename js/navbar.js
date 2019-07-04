@@ -22,3 +22,37 @@ function updateNavBar() {
         }
     }
 }
+
+
+function slideUp(element) {
+    return new Promise((resolve, reject) => {
+        if (!element){
+            reject();
+        }
+        clearClass(element);
+        element.classList.add('slideOutUp');
+        setTimeout(resolve, 1000);
+    });
+}
+
+function slideDown(element) {
+    return new Promise((resolve, reject) => {
+        if (!element){
+            reject();
+        }
+        clearClass(element);        
+        element.classList.add('slideInDown');
+        setTimeout(resolve, 1000);
+    });
+}
+
+function clearClass(element) {
+    if (element){
+        if (element.classList.contains('slideInDown')){
+            element.classList.remove('slideInDown');
+        }
+        if (element.classList.contains('slideOutUp')){
+            element.classList.remove('slideOutUp');
+        }
+    }
+}
