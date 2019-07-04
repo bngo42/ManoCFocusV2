@@ -236,12 +236,24 @@ body {
 .about .informations .paragraph {
     padding: 1em;
     margin: 1em 0;
+    border-radius: 5px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 .about .informations .paragraph p{
     color: rgba(0, 0, 0, 0.7);
 }
+.about .informations .paragraph .media {
+    text-align: center;
+}
 
+.about .informations .paragraph .media img{
+    margin: auto;
+    border-radius: 50%;
+    width: 80%;
+}
 
 .tweet-list {
     padding: 1em;
@@ -460,6 +472,23 @@ animation-delay: -0.16s;
 
     #live-stream .donation {
         line-height: 20px;
+    }
+
+    .about .informations {
+        width: 95%;
+    }
+
+    .about .informations .paragraph {
+        flex-direction: column-reverse;
+    }
+
+    .about .informations .paragraph .media {
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .about .informations .paragraph .media img{
+        width: 50%;
     }
 
     .tweet-list {
