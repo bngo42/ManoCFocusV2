@@ -37,6 +37,9 @@ body {
     width: 100%;
 }
 
+.color-primary { color: #3d3463 !important; }
+.color-secondary { color: #ededed !important; }
+
 .title.banner {
     background: url('../img/left-arrow.png') no-repeat left top / contain, 
                 url('../img/right-arrow.png') no-repeat right top / contain;

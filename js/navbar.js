@@ -12,7 +12,7 @@ toggler.addEventListener('click', () => {
 
 
 function updateNavBar() {
-    if (scroll > navbarTop.clientHeight) {
+    if (scroll >= (navbarTop.clientHeight * 2)) {
         if (!navbarTop.classList.contains('fixed')){
             navbarTop.classList.add('fixed', 'slideInDown');
         }

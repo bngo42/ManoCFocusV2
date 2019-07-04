@@ -26,6 +26,7 @@
                 <div class="item" data-offset="120" data-src="img/layer1.png" data-ratio="0.9"></div>
                 <div class="item" data-offset="20" data-src="img/layer2.png" data-ratio="0.8"></div>
                 <div class="item" data-offset="-80" data-src="img/layer2bis.png" data-ratio="0.6"></div>
+                <div class="item" data-offset="20" data-src="img/layer4.png" data-ratio="0.4"></div>
                 <div class="item" data-offset="-60"data-ratio="1.5">
                     <div class="floater d-flex just-center align-center col item-center logo">
                         <img alt="Logo de manonolita child focus" src="img/logo.png"/>
@@ -33,7 +34,6 @@
                         <h1 class="timer">DIMANCHE 10 NOVEMBRE 2019</h1>
                     </div>
                 </div>
-                <div class="item" data-offset="20" data-src="img/layer4.png" data-ratio="0.4"></div>
                 <div class="item" data-offset="-200" data-src="img/layer4bis.png" data-ratio="0.2"></div>
                 <div class="item" data-offset="-100" data-src="img/layer5.png" data-ratio="0"></div>
             </div>
@@ -43,15 +43,21 @@
                 <h3 class="title banner">SUIVEZ LE DIRECT</h3>
                 <div id="twitch-embed"></div>
                 <div class="donation-goal mb-1">
-                    <p class="title small">Suivez en direct la progression des donations:</p>
-                    <div class="goal-labels mt-1"><div class="min">0€</div><div class="max">3 000€</div></div>
-                    <div class="progress-bar">
-                        <p class="progress-current">0€</p>
-                        <div class="bar-fill"></div>
+                    <div class="countdown-block width-100 color-primary align-center">
+                        <p>La cagnotte sera disponible dans:</p>
+                        <div class="my-1 countdown title big"></div>
                     </div>
-                    <div class="donation d-flex row just-between">
-                        <h4 class="align-center">Vous souhaitez aider l'association en faisant un don ?</h4>
-                        <a href="http://www.childfocus.be/fr/donation" class="btn" target="_blank">FAIRE UN DON</a>
+                    <div class="hide-element">
+                        <p class="title small">Suivez en direct la progression des donations:</p>
+                        <div class="goal-labels mt-1"><div class="min">0€</div><div class="max">3 000€</div></div>
+                        <div class="progress-bar">
+                            <p class="progress-current">0€</p>
+                            <div class="bar-fill"></div>
+                        </div>
+                        <div class="donation d-flex row just-between">
+                            <h4 class="align-center">Vous souhaitez aider l'association en faisant un don ?</h4>
+                            <a href="http://www.childfocus.be/fr/donation" class="btn" target="_blank">FAIRE UN DON</a>
+                        </div>
                     </div>
                 </div>
 
@@ -159,6 +165,7 @@
 
             <div class="footer">Site oueb fait par <a href="http://twitter.com/ibobtouch">ibobtouch</a></div>
         </div>
+        <script src="js/countdown.js"></script>
         <script src="js/print.js"></script>
         <script src="js/partner.js"></script>
         <script src="js/navbar.js"></script>
