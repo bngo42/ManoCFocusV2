@@ -222,6 +222,12 @@ body {
     position: relative;
 }
 
+#live-stream .donation-goal {
+    background-color: white;
+    padding: 1em;
+    border-radius: 0 0 5px 5px;
+}
+
 #live-stream .donation {
     height: 50px;
     line-height: 50px;

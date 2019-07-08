@@ -16,8 +16,8 @@ setInterval(() => {
     }
 }, 1000);
 
-function updateText() {
-    countdown.innerHTML = `${days}J | ${hours}H | ${minutes}M | ${seconds}S`;
+function updateCountdownText() {
+    countdown.innerHTML = `${days}${(currentLocal == "FR") ? "J" : "D"} | ${hours}H | ${minutes}M | ${seconds}S`;
 }
 
 function calculateDiff() {
@@ -27,7 +27,7 @@ function calculateDiff() {
     hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     seconds = Math.floor((diff % (1000 * 60)) / 1000);
-    updateText();
+    updateCountdownText();
 }
 
 
