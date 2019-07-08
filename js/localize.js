@@ -162,7 +162,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-3",
-         value: "Jeune streameuse belge de 19 ans, elle rassemble ses spectateurs devant des emissions de jeux en tout genre et de débats sur différents thèmes. En plus du divertissement, elle a pour but de sensibiliser un maximum de personnes au harcèlement sur internet"
+         value: "Manonolita is a young 19-year-old Belgian streamer, she brings her audience to all kinds of games shows and debates on different themes. In addition to entertainment, it aims to educate as many people as possible about online harassment"
       },
       {
          key : "title-social",
