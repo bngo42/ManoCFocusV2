@@ -56,7 +56,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-1",
-         value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc porta dolor non felis tristique gravida.Nullam eu scelerisque tellus, quis viverra augue. In hac habitasse platea dictumst. Quisque eros tellus, feugiat at lorem in, fringilla mattis dui. Proin faucibus, velit ut varius tempor, orci quam pharetra tellus, ut sodales neque nisi non velit. Sed et facilisis felis. Etiam porta nibh vel ipsum tristique, eu tempor turpis efficitur. Duis bibendum tristique rutrum."
+         value: "Cet évènement, qui se déroulera le 10 novembre 2019, a pour but de récolter un maximum d'argent pour l'association Child Focus, qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs en ligne et hors ligne. Au programme, des jeux, des débats, des invités et tout plein de cadeaux à gagner !"
       },
       {
          key : "title-paragraph-2",
