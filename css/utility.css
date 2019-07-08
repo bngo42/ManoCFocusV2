@@ -172,4 +172,6 @@
     }
 
     .align-left, .align-right { text-align: center; }
+
+    .item-start, .item-end, .item-baseline { align-items: center; }
 }
