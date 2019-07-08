@@ -8,6 +8,12 @@ let days = Math.floor(diff / (1000 * 60 * 60 * 24)),
     minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
     seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
+let localesCount = {
+    FR : `${days}J | ${hours}H | ${minutes}M | ${seconds}S`,
+    EN : `${days}D | ${hours}H | ${minutes}M | ${seconds}S`,
+    NL : `${days}D | ${hours}U | ${minutes}M | ${seconds}S`
+}
+
 calculateDiff();
 
 setInterval(() => {
@@ -17,7 +23,7 @@ setInterval(() => {
 }, 1000);
 
 function updateCountdownText() {
-    countdown.innerHTML = `${days}${(currentLocal == "FR") ? "J" : "D"} | ${hours}H | ${minutes}M | ${seconds}S`;
+    countdown.innerHTML = localesCount[currentLocal];
 }
 
 function calculateDiff() {
@@ -27,6 +33,12 @@ function calculateDiff() {
     hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    localesCount = {
+        FR : `${days}J | ${hours}H | ${minutes}M | ${seconds}S`,
+        EN : `${days}D | ${hours}H | ${minutes}M | ${seconds}S`,
+        NL : `${days}D | ${hours}U | ${minutes}M | ${seconds}S`
+    }
     updateCountdownText();
 }
 

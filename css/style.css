@@ -278,13 +278,14 @@ body {
 }
 .about .informations .paragraph .media {
     text-align: center;
+    padding: 0 1em;
 }
 
 .about .informations .paragraph .media img{
+    max-height: 200px;
     border: 2px solid #eeeeee;
     margin: auto;
     border-radius: 50%;
-    width: 80%;
 }
 
 .tweet-list {
@@ -519,8 +520,10 @@ animation-delay: -0.16s;
     }
 
     .about .informations .paragraph .media img{
-        width: 50%;
+        width: auto;
+        height: 100%;
     }
+
 
     .tweet-list {
         padding: 0;

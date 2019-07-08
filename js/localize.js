@@ -184,91 +184,91 @@ let localizer = {
    "NL" :[
       {
          key : "menu-stream",
-         value: "LIVE STREAM"
+         value: "leven"
       },
       {
          key : "menu-about",
-         value: "ABOUT"
+         value: "over"
       },
       {
          key : "menu-social",
-         value: "SOCIAL"
+         value: "Op sociale netwerken"
       },
       {
          key : "menu-partner",
-         value: "OUR PARTNERS"
+         value: "Onze partners"
       },
       {
          key : "logo-title1",
-         value: "CHARITY STREAM"
+         value: "Liefdadigheidsstroom"
       },
       {
          key : "logo-title2",
-         value: "SUNDAY 10 NOVEMBER 2019"
+         value: "Zondag 10 november 2019"
       },
       {
          key : "title-stream",
-         value: "SUIVEZ LE DIRECT"
+         value: "VOLG DIRECT"
       },
       {
          key : "money-pot",
-         value: "La cagnotte sera disponible dans:"
+         value: "De pot is beschikbaar in:"
       },
       {
          key : "donation-progress-title",
-         value: "Suivez en direct la progression des donations:"
+         value: "Volg de voortgang van de donaties live:"
       },
       {
          key : "donation-help",
-         value: "You want to help this organization with a donation ?"
+         value: "Wil je de vereniging helpen door een donatie te doen?"
       },
       {
          key : "donation-help-button",
-         value: "DONATE !"
+         value: "schenken !"
       },
       {
          key : "title-about",
-         value: "ABOUT"
+         value: "over"
       },
       {
          key : "title-paragraph-1",
-         value: "Quel est le but de cet évènement ?"
+         value: "Wat is het doel van dit evenement?"
       },
       {
          key : "content-paragraph-1",
-         value: "Cet évènement qui se déroulera le 10 novembre 2019 a pour but, durant 12 heures, de récolter un maximum de fonds pour l'association Child Focus. Au programme de cette seconde édition, des jeux, des débats, des invités et tout plein de cadeaux à gagner !"
+         value: "Dit evenement, dat plaatsvindt op 10 november 2019, heeft als doel 12 uur om maximaal fondsen te werven voor de Child Focus-associatie. Het programma van deze tweede editie, games, debatten, gasten en heel veel cadeaus om te winnen!"
       },
       {
          key : "title-paragraph-2",
-         value: "Qu'est-ce que Child Focus ?"
+         value: "Wat is Child Focus?"
       },
       {
          key : "content-paragraph-2",
-         value: "Child focus est une association qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs en ligne et hors ligne."
+         value: "Child Focus is een vereniging die werkt om vermiste kinderen te vinden en de seksuele uitbuiting van minderjarigen online en offline te bestrijden."
       },
       {
          key : "title-paragraph-3",
-         value: "Qui est Manonolita ?"
+         value: "Wie is Manonolita?"
       },
       {
          key : "content-paragraph-3",
-         value: "Jeune streameuse belge de 19 ans, elle rassemble ses spectateurs devant des emissions de jeux en tout genre et de débats sur différents thèmes. En plus du divertissement, elle a pour but de sensibiliser un maximum de personnes sur le harcèlement en ligne"
+         value: "Jonge 19-jarige Belgische streamer, verzamelt haar publiek voor allerhande gameshows en debatten over verschillende thema's. Naast entertainment wil het zoveel mogelijk mensen informeren over online intimidatie"
       },
       {
          key : "title-social",
-         value: "SUR LES RÉSEAUX SOCIAUX"
+         value: "OP SOCIALE NETWERKEN"
       },
       {
          key : "social-description",
-         value: "Send your message with the #ManoChildFocus hastag"
+         value: "Stuur je berichten met de hashtag #manochildfocus"
       },
       {
          key : "title-partner",
-         value: "OUR PARTNERS"
+         value: "onze partners"
       },
       {
          key : "partner-description",
-         value: "Merci à tous nos partenaires de nous soutenir dans cet événement !"
+         value: "Bedankt aan al onze partners voor het steunen van ons in dit evenement!"
       }
    ]
 };
