@@ -56,7 +56,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-1",
-         value: "Cet évènement, qui se déroulera le 10 novembre 2019, a pour but de récolter un maximum d'argent pour l'association Child Focus, qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs en ligne et hors ligne. Au programme, des jeux, des débats, des invités et tout plein de cadeaux à gagner !"
+         value: "Cet évènement qui se déroulera le 10 novembre 2019 a pour but, durant 12 heures, de récolter un maximum de fonds pour l'association Child Focus. Au programme de cette seconde édition, des jeux, des débats, des invités et tout plein de cadeaux à gagner !"
       },
       {
          key : "title-paragraph-2",
@@ -64,7 +64,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-2",
-         value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc porta dolor non felis tristique gravida.Nullam eu scelerisque tellus, quis viverra augue. In hac habitasse platea dictumst. Quisque eros tellus, feugiat at lorem in, fringilla mattis dui. Proin faucibus, velit ut varius tempor, orci quam pharetra tellus, ut sodales neque nisi non velit. Sed et facilisis felis. Etiam porta nibh vel ipsum tristique, eu tempor turpis efficitur. Duis bibendum tristique rutrum."
+         value: "Child focus est une association qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs, que cela soit en ligne ou bien hors ligne."
       },
       {
          key : "title-paragraph-3",
@@ -72,7 +72,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-3",
-         value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc porta dolor non felis tristique gravida.Nullam eu scelerisque tellus, quis viverra augue. In hac habitasse platea dictumst. Quisque eros tellus, feugiat at lorem in, fringilla mattis dui. Proin faucibus, velit ut varius tempor, orci quam pharetra tellus, ut sodales neque nisi non velit. Sed et facilisis felis. Etiam porta nibh vel ipsum tristique, eu tempor turpis efficitur. Duis bibendum tristique rutrum."
+         value: "Jeune streameuse belge de 19 ans, elle rassemble ses spectateurs devant des emissions de jeux en tout genre et de débats sur différents thèmes. En plus du divertissement, elle a pour but de sensibiliser un maximum de personnes au harcèlement sur internet"
       },
       {
          key : "title-social",
@@ -142,27 +142,27 @@ let localizer = {
       },
       {
          key : "title-paragraph-1",
-         value: "What is the goal of this event ?"
+         value: "Quel est le but de cet évènement ?"
       },
       {
          key : "content-paragraph-1",
-         value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc porta dolor non felis tristique gravida.Nullam eu scelerisque tellus, quis viverra augue. In hac habitasse platea dictumst. Quisque eros tellus, feugiat at lorem in, fringilla mattis dui. Proin faucibus, velit ut varius tempor, orci quam pharetra tellus, ut sodales neque nisi non velit. Sed et facilisis felis. Etiam porta nibh vel ipsum tristique, eu tempor turpis efficitur. Duis bibendum tristique rutrum."
+         value: "Cet évènement qui se déroulera le 10 novembre 2019 a pour but, durant 12 heures, de récolter un maximum de fonds pour l'association Child Focus. Au programme de cette seconde édition, des jeux, des débats, des invités ainsi que plein de cadeaux à gagner !"
       },
       {
          key : "title-paragraph-2",
-         value: "What is Child Focus ?"
+         value: "Qu'est-ce que Child Focus ?"
       },
       {
          key : "content-paragraph-2",
-         value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc porta dolor non felis tristique gravida.Nullam eu scelerisque tellus, quis viverra augue. In hac habitasse platea dictumst. Quisque eros tellus, feugiat at lorem in, fringilla mattis dui. Proin faucibus, velit ut varius tempor, orci quam pharetra tellus, ut sodales neque nisi non velit. Sed et facilisis felis. Etiam porta nibh vel ipsum tristique, eu tempor turpis efficitur. Duis bibendum tristique rutrum."
+         value: "Child focus est une association qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs, que cela soit en ligne ou hors ligne."
       },
       {
          key : "title-paragraph-3",
-         value: "Who is Manonolita ?"
+         value: "Qui est Manonolita ?"
       },
       {
          key : "content-paragraph-3",
-         value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc porta dolor non felis tristique gravida.Nullam eu scelerisque tellus, quis viverra augue. In hac habitasse platea dictumst. Quisque eros tellus, feugiat at lorem in, fringilla mattis dui. Proin faucibus, velit ut varius tempor, orci quam pharetra tellus, ut sodales neque nisi non velit. Sed et facilisis felis. Etiam porta nibh vel ipsum tristique, eu tempor turpis efficitur. Duis bibendum tristique rutrum."
+         value: "Jeune streameuse belge de 19 ans, elle rassemble ses spectateurs devant des emissions de jeux en tout genre et de débats sur différents thèmes. En plus du divertissement, elle a pour but de sensibiliser un maximum de personnes au harcèlement sur internet"
       },
       {
          key : "title-social",
@@ -232,27 +232,27 @@ let localizer = {
       },
       {
          key : "title-paragraph-1",
-         value: "What is the goal of this event ?"
+         value: "Quel est le but de cet évènement ?"
       },
       {
          key : "content-paragraph-1",
-         value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc porta dolor non felis tristique gravida.Nullam eu scelerisque tellus, quis viverra augue. In hac habitasse platea dictumst. Quisque eros tellus, feugiat at lorem in, fringilla mattis dui. Proin faucibus, velit ut varius tempor, orci quam pharetra tellus, ut sodales neque nisi non velit. Sed et facilisis felis. Etiam porta nibh vel ipsum tristique, eu tempor turpis efficitur. Duis bibendum tristique rutrum."
+         value: "Cet évènement qui se déroulera le 10 novembre 2019 a pour but, durant 12 heures, de récolter un maximum de fonds pour l'association Child Focus. Au programme de cette seconde édition, des jeux, des débats, des invités et tout plein de cadeaux à gagner !"
       },
       {
          key : "title-paragraph-2",
-         value: "What is Child Focus ?"
+         value: "Qu'est-ce que Child Focus ?"
       },
       {
          key : "content-paragraph-2",
-         value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc porta dolor non felis tristique gravida.Nullam eu scelerisque tellus, quis viverra augue. In hac habitasse platea dictumst. Quisque eros tellus, feugiat at lorem in, fringilla mattis dui. Proin faucibus, velit ut varius tempor, orci quam pharetra tellus, ut sodales neque nisi non velit. Sed et facilisis felis. Etiam porta nibh vel ipsum tristique, eu tempor turpis efficitur. Duis bibendum tristique rutrum."
+         value: "Child focus est une association qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs en ligne et hors ligne."
       },
       {
          key : "title-paragraph-3",
-         value: "Who is Manonolita ?"
+         value: "Qui est Manonolita ?"
       },
       {
          key : "content-paragraph-3",
-         value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.Nunc porta dolor non felis tristique gravida.Nullam eu scelerisque tellus, quis viverra augue. In hac habitasse platea dictumst. Quisque eros tellus, feugiat at lorem in, fringilla mattis dui. Proin faucibus, velit ut varius tempor, orci quam pharetra tellus, ut sodales neque nisi non velit. Sed et facilisis felis. Etiam porta nibh vel ipsum tristique, eu tempor turpis efficitur. Duis bibendum tristique rutrum."
+         value: "Jeune streameuse belge de 19 ans, elle rassemble ses spectateurs devant des emissions de jeux en tout genre et de débats sur différents thèmes. En plus du divertissement, elle a pour but de sensibiliser un maximum de personnes sur le harcèlement en ligne"
       },
       {
          key : "title-social",
@@ -273,7 +273,7 @@ let localizer = {
    ]
 };
 let currentLocal = "";
-updateLocale("FR");
+updateLocale(sessionStorage.getItem("langage") || "EN");
 
 selectors.forEach(select => {
    select.addEventListener('click', e => {
@@ -285,7 +285,7 @@ selectors.forEach(select => {
 
 function updateLocale(lang) {
    if (!lang || !localizer[lang] || lang == currentLocal)
-   return ;
+      return ;
    elements.forEach(el => {
       if (el.dataset.local){
          let ret = getLocal(el.dataset.local, lang);
@@ -297,6 +297,7 @@ function updateLocale(lang) {
       }
    });
    currentLocal = lang;
+   sessionStorage.setItem("langage", lang);
 }
 
 function getLocal(key, lang) {
