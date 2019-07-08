@@ -146,7 +146,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-1",
-         value: "Cet évènement qui se déroulera le 10 novembre 2019 a pour but, durant 12 heures, de récolter un maximum de fonds pour l'association Child Focus. Au programme de cette seconde édition, des jeux, des débats, des invités ainsi que plein de cadeaux à gagner !"
+         value: "This event start on November 10, 2019. During 12 hours, the goals is to raise a maximum of funds for the Child Focus association. Games, debates, guests and lots of prizes to win!"
       },
       {
          key : "title-paragraph-2",
@@ -154,7 +154,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-2",
-         value: "Child focus est une association qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs, que cela soit en ligne ou hors ligne."
+         value: "Child Focus is an association working to find missing children and to fight the sexual exploitation of minors, whether online or offline.<br><br>Learn more by visiting the <a target='_blank' href='http://childfocus.be/en'>Child Focus website</a>"
       },
       {
          key : "title-paragraph-3",
@@ -244,7 +244,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-2",
-         value: "Child Focus is een vereniging die werkt om vermiste kinderen te vinden en de seksuele uitbuiting van minderjarigen online en offline te bestrijden."
+         value: "Child Focus is een vereniging die zich bezighoudt met het vinden van vermiste kinderen en het bestrijden van seksuele uitbuiting van minderjarigen, online of offline.<br><br>Bezoek voor meer informatie de <a target='_blank' href='http://childfocus.be/nl'>Child Focus-website</a>"
       },
       {
          key : "title-paragraph-3",
