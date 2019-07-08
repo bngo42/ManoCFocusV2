@@ -13,10 +13,11 @@ body, html {
 a {
     text-decoration: none;
     color: mediumslateblue;
+    transition: 0.2s;
 }
 
 a:hover {
-    color: white;
+    color: rgb(230, 230, 230);
 }
 
 p {
@@ -512,6 +513,7 @@ animation-delay: -0.16s;
 
     .about .informations .paragraph {
         flex-direction: column-reverse;
+        white-space: pre-wrap;
     }
 
     .about .informations .paragraph .media {

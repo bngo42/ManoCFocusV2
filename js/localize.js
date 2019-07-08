@@ -64,7 +64,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-2",
-         value: "Child focus est une association qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs, que cela soit en ligne ou bien hors ligne."
+         value: "Child focus est une association qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs, que cela soit en ligne ou bien hors ligne.<br><br>Pour en savoir plus, rendez vous sur le site internet de <a target='_blank' href='http://childfocus.be/fr'>Child Focus</a>"
       },
       {
          key : "title-paragraph-3",
