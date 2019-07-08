@@ -142,7 +142,7 @@ let localizer = {
       },
       {
          key : "title-paragraph-1",
-         value: "Quel est le but de cet évènement ?"
+         value: "What is the goal of this event ?"
       },
       {
          key : "content-paragraph-1",
@@ -150,7 +150,7 @@ let localizer = {
       },
       {
          key : "title-paragraph-2",
-         value: "Qu'est-ce que Child Focus ?"
+         value: "What is Child Focus ?"
       },
       {
          key : "content-paragraph-2",
@@ -158,7 +158,7 @@ let localizer = {
       },
       {
          key : "title-paragraph-3",
-         value: "Qui est Manonolita ?"
+         value: "Who is Manonolita ?"
       },
       {
          key : "content-paragraph-3",
