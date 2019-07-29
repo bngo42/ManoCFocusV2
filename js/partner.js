@@ -4,18 +4,22 @@ let partners = [
     {
         name: "Materiel.net",
         img: "img/partners/logo-materiel-net.png",
+        url: "https://www.materiel.net",
         twitter: "https://twitter.com/materielnet",
         facebook: "https://www.facebook.com/Materiel.net",
         twitch: "https://www.twitch.tv/materielnetlive",
-        youtube: "https://www.youtube.com/channel/UCA25ZdZZF5XE6ihPE5pwfnw"
+        youtube: "https://www.youtube.com/channel/UCA25ZdZZF5XE6ihPE5pwfnw",
+        instagram: ""
     },
     {
-        name: "Instant Gaming",
-        img: "img/partners/instant-gaming.png",
-        twitter: "https://twitter.com/InstantGamingFR",
-        facebook: "https://www.facebook.com/Instant.Gaming.fr",
-        twitch: "https://www.twitch.tv/instantgamingfr",
-        youtube: "https://www.youtube.com/channel/UCX7Mo1cDgCpMIMvn7HDrBLw"
+        name: "Derive Figurine",
+        img: "img/partners/logo-DeriveFigurine.png",
+        url: "https://www.derivefigurine.com/fr",
+        twitter: "https://twitter.com/DeriveFigurine",
+        facebook: "https://www.facebook.com/DeriveFigurine",
+        twitch: "",
+        youtube: "",
+        instagram: "https://www.instagram.com/derivefigurine/?hl=fr"
     }
 ];
 
@@ -28,14 +32,16 @@ partners.forEach(partner => {
 function createBox(datas) {
     let box = list.querySelector('.partner-box'),
         newBox = box.cloneNode(true),
+        imgLink = newBox.querySelector('.img-link'),
         img = newBox.querySelector('img'),
         keys = Object.keys(datas);
 
     if (datas.img){
         img.src = datas.img;
+        imgLink.href = datas.url;
     }
     keys.forEach(key => {
-        if (key != 'name' && key != 'img') {
+        if (key != 'name' && key != 'img' && key != 'url') {
             if (datas[key] != "") {
                 let link = newBox.querySelector(`.fa-${key}`);
                 link.href = datas[key];

@@ -356,10 +356,11 @@ width: 800px;
 }
 
 .partners .partner-box .fab {padding: 0.2em;}
-.partners .partner-box .fab.fa-twitter:hover { background-color: #1DA1F2;}
-.partners .partner-box .fab.fa-facebook:hover { background-color: #3C5A99;}
-.partners .partner-box .fab.fa-twitch:hover { background-color: #6441A4;}
-.partners .partner-box .fab.fa-youtube:hover { background-color: #FF0000;}
+.partners .partner-box .fab.fa-twitter:hover { background-color: #1DA1F2; }
+.partners .partner-box .fab.fa-facebook:hover { background-color: #3C5A99; }
+.partners .partner-box .fab.fa-twitch:hover { background-color: #6441A4; }
+.partners .partner-box .fab.fa-youtube:hover { background-color: #FF0000; }
+.partners .partner-box .fab.fa-instagram:hover { background-color: #000000; }
 
 .partners .partner-box .fab.hide {
     display: none;
