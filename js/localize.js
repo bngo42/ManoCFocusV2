@@ -56,7 +56,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-1",
-         value: "Cet évènement qui se déroulera le 10 novembre 2019 a pour but, durant 12 heures, de récolter un maximum de fonds pour l'association Child Focus. Au programme de cette seconde édition, des jeux, des débats, des invités et tout plein de cadeaux à gagner !"
+         value: "Cet évènement qui se déroulera du 9 au 10 novembre 2019 a pour but de récolter un maximum de fonds pour l'association Child Focus. Au programme de cette seconde édition, des jeux, des débats, des invités et tout plein de cadeaux à gagner !"
       },
       {
          key : "title-paragraph-2",
@@ -146,7 +146,7 @@ let localizer = {
       },
       {
          key : "content-paragraph-1",
-         value: "This event start on November 10, 2019. During 12 hours, the goals is to raise a maximum of funds for the Child Focus association. Games, debates, guests and lots of prizes to win!"
+         value: "This event start on November 9th and end on November 10th 2019. The goal is to raise a maximum of funds for the Child Focus association. Games, debates, guests and lots of prizes to win!"
       },
       {
          key : "title-paragraph-2",
