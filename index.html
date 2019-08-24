@@ -41,7 +41,7 @@
                     <div class="floater d-flex just-center align-center col item-center logo">
                         <img alt="Logo de manonolita child focus" src="img/logo.png"/>
                         <h1 data-local="logo-title1" class="timer">STREAM CARITATIF</h1>
-                        <h1 data-local="logo-title2" class="timer">DIMANCHE 10 NOVEMBRE 2019</h1>
+                        <h1 data-local="logo-title2" class="timer">9 & 10 NOVEMBRE 2019</h1>
                     </div>
                 </div>
                 <div class="item" data-offset="-200" data-src="img/layer4bis.png" data-ratio="0.2"></div>
@@ -51,7 +51,14 @@
         <div class="center-content">
             <div id="live-stream" class="section">
                 <h3 data-local="title-stream" class="title banner">SUIVEZ LE DIRECT</h3>
-                <div id="twitch-embed"></div>
+                <div class="top">
+                    <div id="twitch-embed"></div>
+                    <div class="streamers-list">
+                        <div class="streamers-btn active" data-name="manonolita">Manonolita</div>
+                        <div class="streamers-btn" data-name="ibobtouch">Ibobtouch</div>
+                        <div class="streamers-btn" data-name="babatv_">Babatv_</div>
+                    </div>
+                </div>
                 <div class="donation-goal mb-1">
                     <div class="countdown-block width-100 color-primary align-center">
                         <p data-local="money-pot">La cagnotte sera disponible dans:</p>
@@ -127,11 +134,13 @@
             <div id="nos-partenaires" class="partners section align-center">
                 <h3 data-local="title-partner" class="title banner">NOS PARTENAIRES</h3>
                 <p data-local="partner-description">Merci à tous nos partenaires de nous soutenir dans cet événement !</p>
+                
                 <div class="partners-list my-2 d-flex row">
                     <div class="partner-box hide">
-                        <div class="item-start">
+                        <div class="partner-logo item-start">
                             <a href="#" class="img-link" target="_blank"><img alt="logo de la marque" width="100%" src=""/></a>
                         </div>
+
                         <div class="socials-icon item-end">
                             <a class="fab fa-twitter"></a>
                             <a class="fab fa-facebook"></a>
@@ -141,6 +150,7 @@
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div data-local="footer-content" class="footer">Site internet fait par <a target="_blank" href="http://twitter.com/ibobtouch">ibobtouch</a></div>
@@ -153,12 +163,35 @@
         <script src="js/parallax.js"></script>
         <script src="js/tweet.js"></script>
         <script type="text/javascript">
-            new Twitch.Embed("twitch-embed", {
-              width: "100%",
-              height: 480,
-              channel: "manonolita",
-              layout: "video"
-            });
-          </script>
+            let liveFeed = document.querySelector('#twitch-embed');
+            let liveButtons = document.querySelectorAll(".streamers-btn");
+
+            updateLiveStream("manonolita");
+            liveButtons.forEach(btn => {
+                btn.addEventListener('click', e => {
+                    e.stopPropagation();
+                    removeActive();
+                    updateLiveStream(e.target.dataset.name);
+                    e.target.classList.add('active');
+                });
+            }); 
+            
+            function removeActive(){
+                let active = document.querySelector('.streamers-btn.active');
+                active.classList.remove('active');
+            }
+
+            function updateLiveStream(channelName){
+                if (liveFeed.childElementCount > 0){
+                    liveFeed.removeChild(liveFeed.firstChild);
+                }
+                new Twitch.Embed("twitch-embed", {
+                    width: "100%",
+                    height: 480,
+                    channel: channelName,
+                    layout: "video"
+                });
+            }
+        </script>
     </body>
 </html>
