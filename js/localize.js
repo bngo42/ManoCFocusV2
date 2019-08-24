@@ -24,7 +24,7 @@ let localizer = {
       },
       {
          key : "logo-title2",
-         value: "DIMANCHE 10 NOVEMBRE 2019"
+         value: "9 & 10 NOVEMBRE 2019"
       },
       {
          key : "title-stream",
