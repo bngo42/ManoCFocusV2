@@ -32,6 +32,16 @@ let partners = [
         instagram: "https://www.instagram.com/kochmediafr/"
     },
     {
+        name: "Jarl",
+        img: "img/partners/logo-jarl.png",
+        url: "https://jarl.fr",
+        twitter: "https://twitter.com/jarlofficial",
+        facebook: "https://www.facebook.com/jarlofficial",
+        twitch: "",
+        youtube: "",
+        instagram: "https://www.instagram.com/jarl_official"
+    },
+    {
         name: "Materiel.net",
         img: "img/partners/logo-materiel-net.png",
         url: "https://www.materiel.net",
