@@ -12,6 +12,16 @@ let partners = [
         instagram: ""
     },
     {
+        name: "Spawn bar Esport Charleroi",
+        img: "img/partners/logo-spawn.png",
+        url: "https://www.facebook.com/SPAWNCharleroi",
+        twitter: "https://twitter.com/SpawnCharleroi",
+        facebook: "https://www.facebook.com/SPAWNCharleroi/",
+        twitch: "https://www.twitch.tv/spawnstudio",
+        youtube: "https://www.youtube.com/channel/UCJ2dx9U_TNT97iiEd6KYjtA",
+        instagram: "https://www.instagram.com/spawnbarcharleroi/"
+    },
+    {
         name: "Derive Figurine",
         img: "img/partners/logo-DeriveFigurine.png",
         url: "https://www.derivefigurine.com/fr",
