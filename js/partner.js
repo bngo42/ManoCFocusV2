@@ -2,6 +2,36 @@ let list = document.querySelector('.partners-list');
 
 let partners = [
     {
+        name: "Just For Game",
+        img: "img/partners/logo-justForGames.png",
+        url: "https://www.justforgames.com",
+        twitter: "https://twitter.com/justforgames_fr",
+        facebook: "https://www.facebook.com/justforgamesfrance",
+        twitch: "",
+        youtube: "",
+        instagram: ""
+    },
+    {
+        name: "CoolerMaster",
+        img: "img/partners/logo-coolerMaster.png",
+        url: "https://eu.coolermaster.com/fr/",
+        twitter: "https://twitter.com/coolermasterfr",
+        facebook: "https://www.facebook.com/coolermasterfrance",
+        twitch: "",
+        youtube: "https://www.youtube.com/coolermasteronline/",
+        instagram: "https://www.instagram.com/coolermasterfr"
+    },
+    {
+        name: "KochMedia",
+        img: "img/partners/logo-kochmedia.png",
+        url: "https://www.kochmedia.com/fr/",
+        twitter: "https://twitter.com/kochmediafr",
+        facebook: "https://www.facebook.com/kochmediafrance",
+        twitch: "",
+        youtube: "https://www.youtube.com/user/KochMediaFr",
+        instagram: "https://www.instagram.com/kochmediafr/"
+    },
+    {
         name: "Materiel.net",
         img: "img/partners/logo-materiel-net.png",
         url: "https://www.materiel.net",
@@ -34,6 +64,7 @@ let partners = [
 ];
 
 
+partners.sort((a , b) => (a.name > b.name) ? 1 : -1);
 partners.forEach(partner => {
     let box = createBox(partner);
     list.append(box);
