@@ -32,6 +32,16 @@ let partners = [
         instagram: "https://www.instagram.com/kochmediafr/"
     },
     {
+        name: "FragCase",
+        img: "img/partners/logo-fragcase.png",
+        url: "https://fragcase.com",
+        twitter: "https://twitter.com/fragcase",
+        facebook: "https://www.facebook.com/fragcase",
+        twitch: "",
+        youtube: "",
+        instagram: "https://www.instagram.com/fragcase"
+    },
+    {
         name: "Jarl",
         img: "img/partners/logo-jarl.png",
         url: "https://jarl.fr",
