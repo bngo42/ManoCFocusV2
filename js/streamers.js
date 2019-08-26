@@ -14,7 +14,7 @@ let streamerData = [
     }
 ];
 
-
+streamerData.sort((a, b) => (a.name > b.name) ? 1 : -1);
 streamerData.map(createNewBox);
 
 function createNewBox(data) {
