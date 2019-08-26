@@ -210,6 +210,10 @@ body {
     cursor: pointer;
 }
 
+.streamers-list .streamers-btn:hover {
+    background-color: #eeeeee;
+}
+
 .streamers-list .streamers-btn.active {
     background-color: #3d3463;
     color: white;
