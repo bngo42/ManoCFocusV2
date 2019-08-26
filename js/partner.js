@@ -12,6 +12,16 @@ let partners = [
         instagram: ""
     },
     {
+        name: "Loopstop",
+        img: "img/partners/logo-loopstop.png",
+        url: "http://www.loop-stop.com",
+        twitter: "",
+        facebook: "https://www.facebook.com/loopstop",
+        twitch: "",
+        youtube: "https://www.youtube.com/channel/UClSU4Un6M9laWprb4OBK9PA",
+        instagram: "https://www.instagram.com/loopstop"
+    },
+    {
         name: "CoolerMaster",
         img: "img/partners/logo-coolerMaster.png",
         url: "https://eu.coolermaster.com/fr/",
