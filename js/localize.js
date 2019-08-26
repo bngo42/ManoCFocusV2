@@ -164,7 +164,7 @@ let localizer = [
       {
          key : "social-description",
          value: {
-            "FR" : "Envoyez vos messages avec le hastag #ManoChildFocus",
+            "FR" : "Envoyez vos messages avec le hastag <a href='https://twitter.com/search?q=Manonolita' target='_blank'>#ManoChildFocus</a>",
             "EN" : "Send your message with the #ManoChildFocus hastag",
             "NL" : "Stuur je berichten met de hashtag #manochildfocus"
          }
