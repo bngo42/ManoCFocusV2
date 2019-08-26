@@ -32,6 +32,16 @@ let partners = [
         instagram: "https://www.instagram.com/kochmediafr/"
     },
     {
+        name: "Ludo Trotter",
+        img: "img/partners/logo-ludotrotter.png",
+        url: "https://jeux-de-societe.be/",
+        twitter: "https://twitter.com/Ludotrotter",
+        facebook: "https://www.facebook.com/ludotrotter",
+        twitch: "",
+        youtube: "https://www.youtube.com/channel/UC9ONIsd-7bjoEnOIk9AIDKg",
+        instagram: ""
+    },
+    {
         name: "FragCase",
         img: "img/partners/logo-fragcase.png",
         url: "https://fragcase.com",
@@ -40,6 +50,16 @@ let partners = [
         twitch: "",
         youtube: "",
         instagram: "https://www.instagram.com/fragcase"
+    },
+    {
+        name: "Fnac Charleroi",
+        img: "img/partners/logo-fnac.png",
+        url: "https://www.fnac.be",
+        twitter: "https://twitter.com/Fnac_Belgium",
+        facebook: "https://www.facebook.com/FnacBelgium",
+        twitch: "",
+        youtube: "https://www.youtube.com/user/fnac",
+        instagram: "https://www.instagram.com/fnac_belgium"
     },
     {
         name: "Jarl",
