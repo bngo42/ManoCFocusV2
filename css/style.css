@@ -285,6 +285,54 @@ body {
     color: rgba(0, 0, 0, 0.2);
 }
 
+#streamers .box-list {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#streamers .streamer-box.hide {
+    display: none;
+}
+
+#streamers .streamer-box {
+    cursor: pointer;
+    width:200px;
+    height: 200px;
+    padding: 1.2em;
+    background-color: white;
+    margin: 4px;
+    transition: 0.2s;
+    border-bottom: 5px solid #dddddd;
+}
+
+#streamers .streamer-box:hover {
+    transform: translateY(-10px);
+}
+
+#streamers .streamer-box:hover > .avatar {
+    filter: grayscale(0%);
+}
+
+#streamers .streamer-box .avatar {
+    height: 150px;
+    background-position: center;
+    background-size: cover;
+}
+
+#streamers .streamer-box .avatar {
+    transition: 0.2s;
+    filter: grayscale(100%);
+}
+
+#streamers .streamer-box .name {
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
 .about .informations {
     width: 80%;
     margin: 0 auto;

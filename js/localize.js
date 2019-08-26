@@ -90,6 +90,14 @@ let localizer = [
          }
       },
       {
+         key : "title-streamers",
+         value: {
+            "FR" : "LES STREAMERS",
+            "EN" : "STREAMERS",
+            "NL" : "STREAMERS"
+         }
+      },
+      {
          key : "title-about",
          value: {
             "FR" : "A PROPOS",
@@ -211,5 +219,5 @@ function getLocal(key, lang) {
     if (key) {
         ret = localizer.find(l => { return l.key == key });
     }
-    return ret.value[lang];
+    return (ret && ret.value && ret.value[lang]) ? ret.value[lang] : "";
 }
