@@ -318,10 +318,6 @@ body {
     filter: grayscale(0%);
 }
 
-#streamers .streamer-box:hover > .socials-icons .fab {
-    display: block;
-}
-
 #streamers .streamer-box .avatar {
     height: 150px;
     background-position: center;
@@ -354,7 +350,6 @@ body {
     color: rgba(0,0,0,0.3);
     margin: 0 0.2em;
     font-size: 1em;
-    display: none;
 }
 
 #streamers .streamer-box .socials-icons .fab:hover {
