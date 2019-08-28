@@ -12,6 +12,16 @@ let partners = [
         instagram: ""
     },
     {
+        name: "Smartoys",
+        img: "img/partners/logo-smartoys.png",
+        url: "https://www.smartoys.be/catalog",
+        twitter: "https://twitter.com/smartcharleroi",
+        facebook: "https://www.facebook.com/smartcharleroi",
+        twitch: "https://www.twitch.tv/smartoys",
+        youtube: "",
+        instagram: "https://www.instagram.com/smartoys.be"
+    },
+    {
         name: "Loopstop",
         img: "img/partners/logo-loopstop.png",
         url: "http://www.loop-stop.com",
