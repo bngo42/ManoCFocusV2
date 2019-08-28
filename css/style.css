@@ -301,7 +301,6 @@ body {
 }
 
 #streamers .streamer-box {
-    cursor: pointer;
     width:180px;
     height: 200px;
     padding: 1.2em;
@@ -319,6 +318,10 @@ body {
     filter: grayscale(0%);
 }
 
+#streamers .streamer-box:hover > .socials-icons .fab {
+    display: block;
+}
+
 #streamers .streamer-box .avatar {
     height: 150px;
     background-position: center;
@@ -331,11 +334,39 @@ body {
 }
 
 #streamers .streamer-box .name {
-    height: 50px;
-    line-height: 50px;
+    height: 30px;
+    line-height: 30px;
     font-weight: 700;
     text-align: center;
 }
+
+#streamers .streamer-box .socials-icons {
+    padding: 0.2em 0;
+    display: flex;
+    justify-content: center;
+}
+
+#streamers .streamer-box .socials-icons .fab.hide {
+    display:none !important;
+}
+
+#streamers .streamer-box .socials-icons .fab {
+    color: rgba(0,0,0,0.3);
+    margin: 0 0.2em;
+    font-size: 1em;
+    display: none;
+}
+
+#streamers .streamer-box .socials-icons .fab:hover {
+    color: white;
+}
+
+.streamer-box .socials-icons .fab {padding: 0.2em;}
+.streamer-box .socials-icons .fab.fa-twitter:hover { background-color: #1DA1F2; }
+.streamer-box .socials-icons .fab.fa-facebook:hover { background-color: #3C5A99; }
+.streamer-box .socials-icons .fab.fa-twitch:hover { background-color: #6441A4; }
+.streamer-box .socials-icons .fab.fa-youtube:hover { background-color: #FF0000; }
+.streamer-box .socials-icons .fab.fa-instagram:hover { background-color: #000000; }
 
 .about .informations {
     width: 80%;
@@ -375,8 +406,7 @@ body {
     display: flex;
     flex-direction: row;
     padding: 0.5em;
-width: 800px;
-
+    width: 800px;
     height: 180px;
     background-color: white;
     border-radius: 5px;
