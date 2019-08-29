@@ -32,6 +32,16 @@ let partners = [
         instagram: "https://www.instagram.com/loopstop"
     },
     {
+        name: "Nintendo",
+        img: "img/partners/logo-nintendo.png",
+        url: "https://www.nintendo.be",
+        twitter: "https://twitter.com/NintendoBE_FR",
+        facebook: "https://www.facebook.com/NintendoFR",
+        twitch: "https://www.twitch.tv/nintendobelgique",
+        youtube: "https://www.youtube.com/channel/UCeXuncmy_GWIdppRhe2jWwg",
+        instagram: "https://www.instagram.com/NintendoBE"
+    },
+    {
         name: "CoolerMaster",
         img: "img/partners/logo-coolerMaster.png",
         url: "https://eu.coolermaster.com/fr/",
