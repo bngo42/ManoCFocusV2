@@ -6,7 +6,15 @@ let localizer = [
          value: {
             "FR": "LE DIRECT",
             "EN": "LIVE STREAM",
-            "NL": "leven",
+            "NL": "LEVEN",
+         }
+      },
+      {
+         key : "menu-streamers",
+         value: {
+            "FR": "LES STREAMERS",
+            "EN": "STREAMERS",
+            "NL": "STREAMERS",
          }
       },
       {
