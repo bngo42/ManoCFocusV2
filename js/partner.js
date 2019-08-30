@@ -32,6 +32,16 @@ let partners = [
         instagram: "https://www.instagram.com/loopstop"
     },
     {
+        name: "Affaires PC",
+        img: "img/partners/logo-affairespc.png",
+        url: "https://www.affairespc.com",
+        twitter: "https://twitter.com/AffairesPc",
+        facebook: "https://www.facebook.com/affairespc",
+        twitch: "",
+        youtube: "",
+        instagram: "https://www.instagram.com/affairespc"
+    },
+    {
         name: "Nintendo",
         img: "img/partners/logo-nintendo.png",
         url: "https://www.nintendo.be",
