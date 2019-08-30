@@ -42,6 +42,16 @@ let partners = [
         instagram: "https://www.instagram.com/affairespc"
     },
     {
+        name: "Gamesplanet",
+        img: "img/partners/logo-gamesplanet.png",
+        url: "https://fr.gamesplanet.com/",
+        twitter: "https://twitter.com/gamesplanetfr",
+        facebook: "https://www.facebook.com/GamesplanetFR",
+        twitch: "",
+        youtube: "https://www.youtube.com/channel/UC841Ta9UUtsVyVNL5Z4D2dg",
+        instagram: ""
+    },
+    {
         name: "Nintendo",
         img: "img/partners/logo-nintendo.png",
         url: "https://www.nintendo.be",
