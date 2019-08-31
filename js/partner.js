@@ -33,7 +33,7 @@ let partners = [
     },
     {
         name: "Affaires PC",
-        img: "img/partners/logo-affairespc.png",
+        img: "img/partners/logo-affaires.png",
         url: "https://www.affairespc.com",
         twitter: "https://twitter.com/AffairesPc",
         facebook: "https://www.facebook.com/affairespc",
