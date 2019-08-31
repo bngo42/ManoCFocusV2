@@ -28,11 +28,9 @@ setInterval(() => {
             updateTweet(tweet_feed[index]);
         }
     }
-
     if (tweet_feed.length > 0 && !spinner.classList.contains("hide")) {
         spinner.classList.add("hide");
     }
-    
 }, 5000);
 
 

@@ -223,9 +223,9 @@ function updateLocale(lang) {
 }
 
 function getLocal(key, lang) {
-    let ret = null;
-    if (key) {
-        ret = localizer.find(l => { return l.key == key });
-    }
-    return (ret && ret.value && ret.value[lang]) ? ret.value[lang] : "";
+   let ret = null;
+   if (key) {
+      ret = localizer.find(l => { return l.key == key });
+   }
+   return (ret && ret.value && ret.value[lang]) ? ret.value[lang] : "";
 }
