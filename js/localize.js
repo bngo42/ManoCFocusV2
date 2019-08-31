@@ -44,7 +44,7 @@ let localizer = [
       {
          key : "logo-title1",
          value: {
-            "FR" : "STREAM CARITATIF",
+            "FR" : "STREAM CARITATIF - 9 & 10 NOVEMBRE 2019",
             "EN" : "CHARITY STREAM",
             "NL" : "LIEFDADIGHEIDSSTROOM"
          }

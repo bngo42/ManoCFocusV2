@@ -165,9 +165,10 @@ body {
     line-height: 50px;
     background: url('../img/white-banner.png') no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     color: #3d3463;
     font-size: 20pt;
+    margin:auto;
     
 }
 
@@ -600,13 +601,14 @@ animation-delay: -0.16s;
     }
 
     .parallaxer .item .logo img{
-        width: 60%;
+        width: 100%;
     }
     
     .parallaxer .timer {
-        padding: 0 0.5em;
-        font-size: 15pt;
-        line-height: 40px;     
+        padding: 0 0.8em;
+        line-height: 40px;
+        background-size: contain;
+        font-size: 12pt;
     }
 
     #live-stream .top {
