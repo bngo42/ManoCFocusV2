@@ -45,8 +45,8 @@ let localizer = [
          key : "logo-title1",
          value: {
             "FR" : "STREAM CARITATIF - 9 & 10 NOVEMBRE 2019",
-            "EN" : "CHARITY STREAM",
-            "NL" : "LIEFDADIGHEIDSSTROOM"
+            "EN" : "CHARITY STREAM - 9 & 10 NOVEMBER 2019",
+            "NL" : "LIEFDADIGHEIDSSTROOM - 9 & 10 NOVEMBER 2019"
          }
       },
       {
@@ -140,7 +140,7 @@ let localizer = [
       {
          key : "content-paragraph-2",
          value: {
-            "FR" : "Child focus est une association qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs, que cela soit en ligne ou bien hors ligne.<br><br>Pour en savoir plus, rendez vous sur le site internet de <a target='_blank' href='http://childfocus.be/fr'>Child Focus</a>",
+            "FR" : "Child focus est une association qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs, que cela soit en ligne ou bien hors ligne.<br><br>Pour en savoir plus, rendez-vous sur le site internet de <a target='_blank' href='http://childfocus.be/fr'>Child Focus</a>",
             "EN" : "Child Focus is an association working to find missing children and to fight the sexual exploitation of minors, whether online or offline.<br><br>Learn more by visiting the <a target='_blank' href='http://childfocus.be/en'>Child Focus website</a>",
             "NL" : "Child Focus is een vereniging die zich bezighoudt met het vinden van vermiste kinderen en het bestrijden van seksuele uitbuiting van minderjarigen, online of offline.<br><br>Bezoek voor meer informatie de <a target='_blank' href='http://childfocus.be/nl'>Child Focus-website</a>"
          }
