@@ -173,8 +173,8 @@ let localizer = [
          key : "social-description",
          value: {
             "FR" : "Envoyez vos messages avec le hastag <a href='https://twitter.com/search?q=BeFriendsOnline' target='_blank'>#BeFriendsOnline</a>",
-            "EN" : "Send your message with the #ManoChildFocus hastag",
-            "NL" : "Stuur je berichten met de hashtag #manochildfocus"
+            "EN" : "Send your message with the #BeFriendsOnline hashtag",
+            "NL" : "Stuur je berichten met de hashtag #BeFriendsOnline"
          }
       },
       {
