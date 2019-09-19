@@ -5,8 +5,8 @@ let localizer = [
          key : "menu-stream",
          value: {
             "FR": "LE DIRECT",
-            "EN": "LIVE STREAM",
-            "NL": "LEVEN",
+            "EN": "LIVE",
+            "NL": "LIVE",
          }
       },
       {
@@ -30,7 +30,7 @@ let localizer = [
          value: {
             "FR": "SOCIAL",
             "EN": "SOCIAL",
-            "NL": "OP SOCIALE NETWERKEN"
+            "NL": "SOCIAAL"
          }
       },
       {
@@ -45,8 +45,8 @@ let localizer = [
          key : "logo-title1",
          value: {
             "FR" : "STREAM CARITATIF - 9 & 10 NOVEMBRE 2019",
-            "EN" : "CHARITY STREAM - 9 & 10 NOVEMBER 2019",
-            "NL" : "LIEFDADIGHEIDSSTROOM - 9 & 10 NOVEMBER 2019"
+            "EN" : "CHARITY STREAM - NOVEMBER 9th & 10th 2019",
+            "NL" : "CARRITATIEVE STREAM - 9 & 10 NOVEMBER 2019"
          }
       },
       {
@@ -61,8 +61,8 @@ let localizer = [
          key : "title-stream",
          value: {
             "FR" : "SUIVEZ LE DIRECT",
-            "EN" : "WATCH THE LIVESTREAM",
-            "NL" : "VOLG DIRECT"
+            "EN" : "FOLLOW LIVE",
+            "NL" : "VOLG LIVE"
          }
       },
       {
@@ -70,15 +70,15 @@ let localizer = [
          value: {
             "FR" : "La cagnotte sera disponible dans:",
             "EN" : "The money pot will be available in:",
-            "NL" : "De pot is beschikbaar in:"
+            "NL" : "De spaarpot zal beschikbaar zijn binnen:"
          }
       },
       {
          key : "donation-progress-title",
          value: {
             "FR" : "Suivez en direct la progression des donations:",
-            "EN" : "Follow the donate progression:",
-            "NL" : "Volg de voortgang van de donaties live:"
+            "EN" : "Follow live the donation progression:",
+            "NL" : "Volg live de vooruitgang van de schenkingen:"
          }
       },
       {
@@ -93,8 +93,8 @@ let localizer = [
          key : "donation-help-button",
          value: {
             "FR" : "FAIRE UN DON",
-            "EN" : "DONATE !",
-            "NL" : "SCHENKEN !"
+            "EN" : "MAKE A DONATION",
+            "NL" : "EEN GIFT DOEN"
          }
       },
       {
@@ -117,7 +117,7 @@ let localizer = [
          key : "title-paragraph-1",
          value: {
             "FR" : "Quel est le but de cet évènement ?",
-            "EN" : "What is the goal of this event ?",
+            "EN" : "What is the purpose of this event?",
             "NL" : "Wat is het doel van dit evenement?"
          }
       },
@@ -125,8 +125,8 @@ let localizer = [
          key : "content-paragraph-1",
          value: {
             "FR" : "Cet évènement qui se déroulera du 9 au 10 novembre 2019 a pour but de récolter un maximum de fonds pour l'association Child Focus. Au programme de cette seconde édition, des jeux, des débats, des invités et tout plein de cadeaux à gagner !",
-            "EN" : "This event start on November 9th and end on November 10th 2019. The goal is to raise a maximum of funds for the Child Focus association. Games, debates, guests and lots of prizes to win!",
-            "NL" : "Dit evenement, dat plaatsvindt op 10 november 2019, heeft als doel 12 uur om maximaal fondsen te werven voor de Child Focus-associatie. Het programma van deze tweede editie, games, debatten, gasten en heel veel cadeaus om te winnen!"
+            "EN" : "This goal of this event, taking place on November 9th & 10th, is to collect as many donations as possible for Child Focus. Program of this second edition: games, debates, guests and plenty of gifts to win",
+            "NL" : "Dit evenement, dat zal plaatsvinden op 9 en 10 november 2019, heeft als doel om zoveel mogelijk schenkingen in te zamelen voor de Stichting Child Focus. Op het programma van deze tweede editie: games, debatten, gasten en geschenken die worden weggegeven"
          }
       },
       {
@@ -134,15 +134,15 @@ let localizer = [
          value: {
             "FR" : "Qu'est-ce que Child Focus ?",
             "EN" : "What is Child Focus ?",
-            "NL" : "Wat is Child Focus?"
+            "NL" : "Wie is Child Focus?"
          }
       },
       {
          key : "content-paragraph-2",
          value: {
             "FR" : "Child focus est une association qui œuvre pour retrouver les enfants disparus et lutter contre l’exploitation sexuelle des mineurs, que cela soit en ligne ou bien hors ligne.<br><br>Pour en savoir plus, rendez-vous sur le site internet de <a target='_blank' href='http://childfocus.be/fr'>Child Focus</a>",
-            "EN" : "Child Focus is an association working to find missing children and to fight the sexual exploitation of minors, whether online or offline.<br><br>Learn more by visiting the <a target='_blank' href='http://childfocus.be/en'>Child Focus website</a>",
-            "NL" : "Child Focus is een vereniging die zich bezighoudt met het vinden van vermiste kinderen en het bestrijden van seksuele uitbuiting van minderjarigen, online of offline.<br><br>Bezoek voor meer informatie de <a target='_blank' href='http://childfocus.be/nl'>Child Focus-website</a>"
+            "EN" : "Child Focus is the center for missing and sexually exploited children (online and offline). Visit their <a target='_blank' href='http://childfocus.be/en'>website</a> for more information",
+            "NL" : "Child Focus is de Stichting die zich inzet om vermiste kinderen terug te vinden en te strijden tegen de seksuele uitbuiting van minderjarigen, zowel online als offline. Meer info op de site van <a target='_blank' href='http://childfocus.be/en'>Child Focus</a>"
          }
       },
       {
@@ -157,24 +157,24 @@ let localizer = [
          key : "content-paragraph-3",
          value: {
             "FR" : "Jeune streameuse belge de 19 ans, elle rassemble ses spectateurs devant des emissions de jeux en tout genre et de débats sur différents thèmes. En plus du divertissement, elle a pour but de sensibiliser un maximum de personnes au harcèlement sur internet",
-            "EN" : "Manonolita is a young 19-year-old Belgian streamer, she brings her audience to all kinds of games shows and debates on different themes. In addition to entertainment, it aims to educate as many people as possible about online harassment",
-            "NL" : "Jonge 19-jarige Belgische streamer, verzamelt haar publiek voor allerhande gameshows en debatten over verschillende thema's. Naast entertainment wil het zoveel mogelijk mensen informeren over online intimidatie"
+            "EN" : "As a young Belgian 19-years old streamer, she gathers people through games and debates about different themes. Next to entertainment, she also wants to raise awareness about online harrassment",
+            "NL" : "Als 19-jarige Belgische streamer, brengt ze mensen samen via games en debatten over verschillende thema's. Naast ontspanning wil ze ook mensen sensibiliseren rond online intimidatie"
          }
       },
       {
          key : "title-social",
          value: {
             "FR" : "VOUS EN PARLEZ SUR TWITTER",
-            "EN" : "ON TWITTER",
-            "NL" : "OP SOCIALE NETWERKEN"
+            "EN" : "YOU TALK ABOUT IT ON TWITTER",
+            "NL" : "JE PRAAT EROVER OP TWITTER"
          }
       },
       {
          key : "social-description",
          value: {
-            "FR" : "Envoyez vos messages avec le hastag <a href='https://twitter.com/search?q=BeFriendsOnline' target='_blank'>#BeFriendsOnline</a>",
-            "EN" : "Send your message with the #BeFriendsOnline hashtag",
-            "NL" : "Stuur je berichten met de hashtag #BeFriendsOnline"
+            "FR" : "Envoyez vos messages avec le hashtag <a href='https://twitter.com/search?q=BeFriendsOnline' target='_blank'>#BeFriendsOnline</a>",
+            "EN" : "Send messages with the hashtag <a href='https://twitter.com/search?q=BeFriendsOnline' target='_blank'>#BeFriendsOnline</a>",
+            "NL" : "Stuur je berichten met de hashtag <a href='https://twitter.com/search?q=BeFriendsOnline' target='_blank'>#BeFriendsOnline</a>"
          }
       },
       {
@@ -189,8 +189,8 @@ let localizer = [
          key : "partner-description",
          value: {
             "FR" : "Merci à tous nos partenaires de nous soutenir dans cet événement !",
-            "EN" : "Thanks to ours partners to support this event !",
-            "NL" : "Bedankt aan al onze partners voor het steunen van ons in dit evenement!"
+            "EN" : "Thanks to all of our partners for supporting us through this event!",
+            "NL" : "Dank aan alle partners om ons te steunen bij dit evenement!"
          }
       }
 ];
