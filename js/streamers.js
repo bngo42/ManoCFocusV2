@@ -204,7 +204,7 @@ let streamerData = [
     }
 ];
 
-streamerData.sort((a, b) => (a.name.toLowerCase() > b.name.toLowerCase()) ? 1 : -1);
+streamerData.sort((a, b) => ((b.name.toLowerCase() == 'manonolita' || a.name.toLowerCase() > b.name.toLowerCase())) ? 1 : -1);
 streamerData.map(createNewBox);
 
 function createNewBox(data) {

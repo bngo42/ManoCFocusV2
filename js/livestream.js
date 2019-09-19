@@ -1,23 +1,36 @@
-let liveFeed = document.querySelector('#twitch-embed');
-let buttonsHolder = document.querySelector('.streamers-list');
-let liveButton = document.querySelector(".streamers-btn");
+let liveFeed = document.querySelector('#twitch-embed'),
+    buttonsHolder = document.querySelector('.streamers-list'),
+    liveButton = document.querySelector(".streamers-btn"),
+    isListed = false;
 
-streamerData.forEach(user => {
-    if (user.name && user.twitch){
-        let newBtn = liveButton.cloneNode(true);
-        newBtn.innerHTML = user.name;
-        newBtn.addEventListener('click', e => {
-            removeActive();
-            updateLiveStream(name);
-            e.target.classList.add('active');
-        });
-        let name = extractName(user.twitch);
-        newBtn.classList.remove('hidden');
-        if (user.name.toLowerCase() == 'manonolita')
-            newBtn.classList.add('active');
-        buttonsHolder.appendChild(newBtn);
+  
+let inter = setInterval(() => {
+    if (streamerData && !isListed){
+        updateStreamerList();
+        clearInterval(inter);
     }
-});
+}, 500);
+
+
+function updateStreamerList() {
+    streamerData.forEach(user => {
+        if (user.name && user.twitch){
+            let newBtn = liveButton.cloneNode(true);
+            newBtn.innerHTML = user.name;
+            newBtn.addEventListener('click', e => {
+                removeActive();
+                updateLiveStream(name);
+                e.target.classList.add('active');
+            });
+            let name = extractName(user.twitch);
+            newBtn.classList.remove('hidden');
+            if (user.name.toLowerCase() == 'manonolita') {
+                newBtn.classList.add('active');
+            }
+            buttonsHolder.appendChild(newBtn);
+        }
+    });
+}
 
 function extractName(url) {
     return url.replace("https://www.twitch.tv/", "");
