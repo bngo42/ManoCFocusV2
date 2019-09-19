@@ -202,6 +202,10 @@ body {
     background-color: rgba(0, 0, 0, 0.05);
 }
 
+.streamers-list .streamers-btn.hidden {
+    display: none;
+}
+
 .streamers-list .streamers-btn{
     padding: 1.5em;
     background-color: #e9e9e9;
