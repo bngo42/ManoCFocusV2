@@ -150,6 +150,46 @@ let partners = [
         twitch: "",
         youtube: "",
         instagram: "https://www.instagram.com/derivefigurine/?hl=fr"
+    },
+    {
+        name: "MacWay",
+        img: "img/partners/logo-macway.png",
+        url: "https://www.macway.com/",
+        twitter: "https://twitter.com/macway_fr",
+        facebook: "https://www.facebook.com/macway",
+        twitch: "",
+        youtube: "https://www.youtube.com/user/MacWayTV",
+        instagram: ""
+    },
+    {
+        name: "SlumberLand BD",
+        img: "img/partners/logo-slumberlandbd.png",
+        url: "https://www.slumberlandbdworld.com",
+        twitter: "",
+        facebook: "https://www.facebook.com/sbdwtome11",
+        twitch: "",
+        youtube: "",
+        instagram: ""
+    },
+    {
+        name: "Amalgames Charleroi",
+        img: "img/partners/logo-amalgames.png",
+        url: "https://www.facebook.com/amalgamescharleroi",
+        twitter: "",
+        facebook: "https://www.facebook.com/amalgamescharleroi",
+        twitch: "",
+        youtube: "",
+        instagram: ""
+    },
+    {
+        name: "Ubisoft",
+        img: "img/partners/logo-ubisoft.png",
+        url: "https://www.ubisoft.com/fr-fr",
+        twitter: "https://twitter.com/UbisoftFR",
+        facebook: "https://www.facebook.com/ubisoft.france",
+        twitch: "https://www.twitch.tv/ubisoft",
+        youtube: "https://www.youtube.com/user/UbisoftFR",
+        instagram: "https://www.instagram.com/ubisoftfr"
     }
 ];
 
