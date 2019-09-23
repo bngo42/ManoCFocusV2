@@ -195,7 +195,14 @@ let localizer = [
       }
 ];
 let currentLocal = "";
-updateLocale(sessionStorage.getItem("langage") || "FR");
+let langUrl = getParameterByName("lang");
+if (langUrl){
+   let fetchedLang = langUrl.toUpperCase();
+   updateLocale(fetchedLang);
+} else {
+   updateLocale(sessionStorage.getItem("langage") || "FR");
+}
+
 
 selectors.forEach(select => {
    select.addEventListener('click', e => {
@@ -204,6 +211,15 @@ selectors.forEach(select => {
    });
 });
 
+function getParameterByName(name, url) {
+   if (!url) url = window.location.href;
+   name = name.replace(/[\[\]]/g, '\\$&');
+   var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+       results = regex.exec(url);
+   if (!results) return null;
+   if (!results[2]) return '';
+   return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
 
 function updateLocale(lang) {
    if (!lang || lang == currentLocal)
