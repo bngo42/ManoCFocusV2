@@ -198,7 +198,7 @@ let currentLocal = "";
 let langUrl = getParameterByName("lang");
 if (langUrl){
    let fetchedLang = langUrl.toUpperCase();
-   updateLocale(fetchedLang);
+   updateLocale((fetchedLang == "FR" || fetchedLang == "EN" || fetchedLang == "NL") ? fetchedLang : "FR");
 } else {
    updateLocale(sessionStorage.getItem("langage") || "FR");
 }
