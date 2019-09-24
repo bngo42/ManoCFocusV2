@@ -368,6 +368,33 @@ body {
 .streamer-box .socials-icons .fab.fa-youtube:hover { background-color: #FF0000; }
 .streamer-box .socials-icons .fab.fa-instagram:hover { background-color: #000000; }
 
+.team .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-list .member-box {
+    width: 220px;
+    text-align: center;
+}
+
+.member-box .avatar {
+    border:5px solid #3d3463;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.member-box .member-name {
+    padding: 0.5em;
+    margin: 0.2em;
+    color: #3d3463;
+}
+
 .about .informations {
     width: 80%;
     margin: 0 auto;

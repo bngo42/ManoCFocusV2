@@ -106,6 +106,14 @@ let localizer = [
          }
       },
       {
+         key : "title-team",
+         value: {
+            "FR" : "L'ÉQUIPE",
+            "EN" : "THE TEAM",
+            "NL" : "THE TEAM"
+         }
+      },
+      {
          key : "title-about",
          value: {
             "FR" : "A PROPOS",
