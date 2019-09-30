@@ -44,7 +44,7 @@ let streamerData = [
         image: "img/streamers/cruella.jpg",
         twitter: "https://twitter.com/cruelladk",
         facebook: "",
-        twitch: "",
+        twitch: "https://www.twitch.tv/cruelladk",
         youtube: "https://www.youtube.com/channel/UCp0qQWS1udpRvKcMDPGp96g",
         instagram: "https://www.instagram.com/cruelladk"
     },
@@ -71,7 +71,7 @@ let streamerData = [
         image: "img/streamers/tsu.jpg",
         twitter: "https://twitter.com/TsuVideos",
         facebook: "",
-        twitch: "",
+        twitch: "https://www.twitch.tv/tsuvideo",
         youtube: "https://www.youtube.com/channel/UCO1ahLP9kaeQUm18wPdNy0A",
         instagram: ""
     },
