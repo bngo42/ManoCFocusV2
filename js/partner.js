@@ -112,6 +112,16 @@ let partners = [
         instagram: "https://www.instagram.com/fnac_belgium"
     },
     {
+        name: "Halo FR",
+        img: "img/partners/logo-halofr.png",
+        url: "https://www.halo.fr",
+        twitter: "",
+        facebook: "https://www.facebook.com/halo.fr",
+        twitch: "",
+        youtube: "https://www.youtube.com/user/HaloQG",
+        instagram: ""
+    },
+    {
         name: "Jarl",
         img: "img/partners/logo-jarl.png",
         url: "https://jarl.fr",
