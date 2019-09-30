@@ -131,7 +131,7 @@ let streamerData = [
     },
     { 
         name: "Lucki",
-        image: "img/streamers/.jpg",
+        image: "",
         twitter: "",
         facebook: "",
         twitch: "",
@@ -140,7 +140,7 @@ let streamerData = [
     },
     { 
         name: "Rayane",
-        image: "img/streamers/.jpg",
+        image: "",
         twitter: "",
         facebook: "",
         twitch: "",
@@ -149,7 +149,7 @@ let streamerData = [
     },
     { 
         name: "MGM",
-        image: "img/streamers/.jpg",
+        image: "",
         twitter: "",
         facebook: "",
         twitch: "https://www.twitch.tv/mgmsenium",
@@ -184,7 +184,7 @@ let streamerData = [
         instagram: ""
     },
     { 
-        name: "Emie",
+        name: "Emie", 
         image: "img/streamers/emie.jpg",
         twitter: "https://twitter.com/Emieandco",
         facebook: "https://www.facebook.com/EmieOfficiel",
@@ -231,7 +231,7 @@ function createNewBox(data) {
                 }
             }
         });
-        boxAvatar.style.backgroundImage = `url('${data.image}')`;
+        boxAvatar.style.backgroundImage = `url('${data.image ? data.image : "img/default.jpg"}')`;
         boxName.innerHTML = data.name;
         streamerHolder.appendChild(newBox);
         newBox.classList.remove('hide');
