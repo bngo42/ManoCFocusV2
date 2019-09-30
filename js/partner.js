@@ -122,6 +122,16 @@ let partners = [
         instagram: ""
     },
     {
+        name: "Au bazar de Yiruld",
+        img: "img/partners/logo-yiruld.png",
+        url: "https://www.facebook.com/pages/category/Shopping---Retail/Au-Bazar-de-Yiruld-183034725629696/",
+        twitter: "",
+        facebook: "https://www.facebook.com/pages/category/Shopping---Retail/Au-Bazar-de-Yiruld-183034725629696/",
+        twitch: "",
+        youtube: "",
+        instagram: ""
+    },
+    {
         name: "Jarl",
         img: "img/partners/logo-jarl.png",
         url: "https://jarl.fr",
