@@ -140,7 +140,7 @@ let streamerData = [
     },
     { 
         name: "Rayane",
-        image: "",
+        image: "img/streamers/rayane.jpg",
         twitter: "",
         facebook: "",
         twitch: "",
