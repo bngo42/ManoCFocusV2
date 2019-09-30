@@ -50,11 +50,11 @@ let localizer = [
          }
       },
       {
-         key : "logo-title2",
+         key : "logo-profit",
          value: {
-            "FR" : "9 & 10 NOVEMBRE 2019",
-            "EN" : "9 & 10 NOVEMBER 2019",
-            "NL" : "9 & 10 NOVEMBER 2019"
+            "FR" : "Au profit de l'association",
+            "EN" : "Au profit de l'association EN",
+            "NL" : "Au profit de l'association NL"
          }
       },
       {
@@ -109,10 +109,27 @@ let localizer = [
          key : "title-team",
          value: {
             "FR" : "L'ÉQUIPE",
-            "EN" : "THE TEAM",
-            "NL" : "THE TEAM"
+            "EN" : "THE TEAM EN",
+            "NL" : "THE TEAM NL"
          }
       },
+      {
+         key : "description1-team",
+         value: {
+            "FR" : "Découvrez l'équipe derrière cet événement",
+            "EN" : "Découvrez l'équipe derrière cet événement EN",
+            "NL" : "Découvrez l'équipe derrière cet événement NL"
+         }
+      },
+      {
+         key : "description2-team",
+         value: {
+            "FR" : "Ils co-organisent avec nous cet événement",
+            "EN" : "Ils co-organisent avec nous cet événement EN",
+            "NL" : "Ils co-organisent avec nous cet événement NL"
+         }
+      },
+      
       {
          key : "title-about",
          value: {
