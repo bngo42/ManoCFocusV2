@@ -149,7 +149,7 @@ let streamerData = [
     },
     { 
         name: "MGM",
-        image: "",
+        image: "img/streamers/mgm.jpg",
         twitter: "",
         facebook: "",
         twitch: "https://www.twitch.tv/mgmsenium",
@@ -184,13 +184,13 @@ let streamerData = [
         instagram: ""
     },
     { 
-        name: "Emie", 
-        image: "img/streamers/emie.jpg",
-        twitter: "https://twitter.com/Emieandco",
-        facebook: "https://www.facebook.com/EmieOfficiel",
-        twitch: "https://www.twitch.tv/emieandco",
-        youtube: "https://www.youtube.com/emieandco",
-        instagram: "https://www.instagram.com/emieandco"
+        name: "Emiox", 
+        image: "img/streamers/emiox.jpg",
+        twitter: "https://twitter.com/emioxx",
+        facebook: "",
+        twitch: "https://www.twitch.tv/emiox",
+        youtube: "",
+        instagram: ""
     },
     
     { 
