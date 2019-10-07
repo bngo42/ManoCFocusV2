@@ -21,6 +21,15 @@ let streamerData = [
         instagram: "https://www.instagram.com/los_packam/"
     },
     { 
+        name: "Aydiin",
+        image: "img/streamers/aydiin.jpg",
+        twitter: "https://twitter.com/Ayd1in",
+        facebook: "",
+        twitch: "https://www.twitch.tv/Aydiin",
+        youtube: "https://www.youtube.com/c/AydiinTV",
+        instagram: "https://www.instagram.com/lgdaydiin"
+    },
+    { 
         name: "aMythïcs",
         image: "img/streamers/amythics.jpg",
         twitter: "https://twitter.com/anthonymacaigne",
