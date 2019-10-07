@@ -513,6 +513,24 @@ body {
     display: none;
 }
 
+.networks {
+    margin: 5em 0;
+}
+
+.networks-list {
+    margin: 1em auto;
+}
+
+.networks-list .fab {
+    color: #3d3463;
+    font-size: 4em;
+    margin: 0 0.2em;
+}
+
+.networks-list .fab:hover {
+    color: #6441A4;
+}
+
 .footer {
     position:absolute;
     background-color: #3d3463;

@@ -195,6 +195,14 @@ let localizer = [
          }
       },
       {
+         key : "networks-description",
+         value: {
+            "FR" : "Rejoignez nos réseaux sociaux",
+            "EN" : "Rejoignez nos réseaux sociaux EN",
+            "NL" : "Rejoignez nos réseaux sociaux NL"
+         }
+      },
+      {
          key : "social-description",
          value: {
             "FR" : "Envoyez vos messages avec le hashtag <a href='https://twitter.com/search?q=BeFriendsOnline' target='_blank'>#BeFriendsOnline</a>",
