@@ -21,6 +21,15 @@ let streamerData = [
         instagram: "https://www.instagram.com/los_packam/"
     },
     { 
+        name: "Dwight",
+        image: "img/streamers/dwight.jpg",
+        twitter: "https://twitter.com/Dwight44954",
+        facebook: "https://www.facebook.com/mrdwight44954",
+        twitch: "https://www.twitch.tv/misterdwight",
+        youtube: "https://www.youtube.com/user/Dwight4954",
+        instagram: "https://www.instagram.com/dwight44954/"
+    },
+    { 
         name: "Aydiin",
         image: "img/streamers/aydiin.jpg",
         twitter: "https://twitter.com/Ayd1in",
@@ -107,7 +116,7 @@ let streamerData = [
         image: "img/streamers/idex.jpg",
         twitter: "https://twitter.com/iDexCsgo",
         facebook: "",
-        twitch: "",
+        twitch: "https://www.twitch.tv/iDex",
         youtube: "",
         instagram: ""
     },
@@ -200,6 +209,15 @@ let streamerData = [
         twitch: "https://www.twitch.tv/emiox",
         youtube: "",
         instagram: ""
+    },
+    { 
+        name: "TeufeurS", 
+        image: "img/streamers/.jpg",
+        twitter: "https://twitter.com/TeufeurSoff",
+        facebook: "",
+        twitch: "https://www.twitch.tv/Teuf",
+        youtube: "https://www.youtube.com/channel/UCjak-4N_vAV-TI-yN24nvIA",
+        instagram: "https://www.instagram.com/teufeurs_live"
     },
     
     { 
