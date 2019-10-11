@@ -212,7 +212,7 @@ let streamerData = [
     },
     { 
         name: "TeufeurS", 
-        image: "img/streamers/.jpg",
+        image: "img/streamers/teufeurs.jpg",
         twitter: "https://twitter.com/TeufeurSoff",
         facebook: "",
         twitch: "https://www.twitch.tv/Teuf",
