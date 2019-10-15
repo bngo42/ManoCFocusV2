@@ -120,6 +120,15 @@ let streamerData = [
         instagram: ""
     },
     { 
+        name: "Xnick3lz",
+        image: "",
+        twitter: "https://twitter.com/xnick3lz",
+        facebook: "",
+        twitch: "https://www.twitch.tv/xnick3lz",
+        youtube: "https://www.youtube.com/channel/UCjFW32uVlr44_0HxiX2hG9w",
+        instagram: ""
+    },
+    { 
         name: "MGM",
         image: "img/streamers/mgm.jpg",
         twitter: "",
@@ -192,15 +201,6 @@ let streamerData = [
         instagram: ""
     },
     { 
-        name: "Nickelx",
-        image: "img/streamers/nickelx.jpg",
-        twitter: "",
-        facebook: "",
-        twitch: "",
-        youtube: "",
-        instagram: ""
-    },
-    { 
         name: "Scydark",
         image: "img/streamers/scydark.jpg",
         twitter: "https://twitter.com/ScyDark",
@@ -210,7 +210,7 @@ let streamerData = [
         instagram: ""
     },
     { 
-        name: "Thibu",
+        name: "Thibuzor",
         image: "img/streamers/thibu.jpg",
         twitter: "https://twitter.com/thibuzor",
         facebook: "",
