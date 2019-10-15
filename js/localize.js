@@ -116,9 +116,9 @@ let localizer = [
       {
          key : "description1-team",
          value: {
-            "FR" : "Découvrez l'équipe derrière cet événement",
-            "EN" : "Découvrez l'équipe derrière cet événement EN",
-            "NL" : "Découvrez l'équipe derrière cet événement NL"
+            "FR" : "Découvrez notre équipe",
+            "EN" : "Découvrez notre équipe EN",
+            "NL" : "Découvrez notre équipe NL"
          }
       },
       {
