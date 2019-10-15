@@ -37,17 +37,7 @@ let streamerData = [
         twitch: "https://www.twitch.tv/Aydiin",
         youtube: "https://www.youtube.com/c/AydiinTV",
         instagram: "https://www.instagram.com/lgdaydiin"
-    },
-    { 
-        name: "aMythïcs",
-        image: "img/streamers/amythics.jpg",
-        twitter: "https://twitter.com/anthonymacaigne",
-        facebook: "https://www.facebook.com/mythicsStream",
-        twitch: "https://www.twitch.tv/amythics",
-        youtube: "",
-        instagram: ""
-    },
-    
+    },    
     { 
         name: "Ordwaitgame",
         image: "img/streamers/ordwait.jpg",
@@ -103,15 +93,6 @@ let streamerData = [
         instagram: ""
     },
     { 
-        name: "Misutaaa",
-        image: "img/streamers/misutaaa.jpg",
-        twitter: "https://twitter.com/misutaaacsgo",
-        facebook: "",
-        twitch: "https://www.twitch.tv/misutaaa",
-        youtube: "https://www.youtube.com/channel/UCCs3ONPa7D5pLSUJVzIaxJw",
-        instagram: "https://www.instagram.com/misutaaaCSGO"
-    },
-    { 
         name: "iDex",
         image: "img/streamers/idex.jpg",
         twitter: "https://twitter.com/iDexCsgo",
@@ -121,35 +102,8 @@ let streamerData = [
         instagram: ""
     },
     { 
-        name: "beyAz",
-        image: "img/streamers/beyAz.jpg",
-        twitter: "https://twitter.com/beyAzCSGO",
-        facebook: "",
-        twitch: "",
-        youtube: "",
-        instagram: ""
-    },
-    { 
-        name: "Ex6TenZ",
-        image: "img/streamers/ex6tenzzz.jpg",
-        twitter: "https://twitter.com/Ex6TenZZZ",
-        facebook: "",
-        twitch: "",
-        youtube: "",
-        instagram: "https://www.instagram.com/ex6tenz1337"
-    },
-    { 
-        name: "maleK",
-        image: "img/streamers/malek.jpg",
-        twitter: "https://twitter.com/malekCSGO",
-        facebook: "",
-        twitch: "https://www.twitch.tv/malek_csgo",
-        youtube: "https://www.youtube.com/maleKCSGO",
-        instagram: "https://www.instagram.com/malek_csgo"
-    },
-    { 
         name: "Lucki",
-        image: "",
+        image: "img/streamers/lucki.jpg",
         twitter: "",
         facebook: "",
         twitch: "",
@@ -219,7 +173,6 @@ let streamerData = [
         youtube: "https://www.youtube.com/channel/UCjak-4N_vAV-TI-yN24nvIA",
         instagram: "https://www.instagram.com/teufeurs_live"
     },
-    
     { 
         name: "JL Guizzi",
         image: "img/streamers/guizzi.jpg",
@@ -228,6 +181,51 @@ let streamerData = [
         twitch: "https://www.twitch.tv/guizzi_",
         youtube: "https://www.youtube.com/channel/UCoJ026Oq_sNJr-4UWESW5eg",
         instagram: "https://www.instagram.com/guizzi_"
+    },
+    { 
+        name: "Kalinko",
+        image: "img/streamers/kalinko.jpg",
+        twitter: "https://twitter.com/KalinkoNico",
+        facebook: "",
+        twitch: "https://www.twitch.tv/nicokalinko",
+        youtube: "",
+        instagram: ""
+    },
+    { 
+        name: "Nickelx",
+        image: "img/streamers/nickelx.jpg",
+        twitter: "",
+        facebook: "",
+        twitch: "",
+        youtube: "",
+        instagram: ""
+    },
+    { 
+        name: "Scydark",
+        image: "img/streamers/scydark.jpg",
+        twitter: "https://twitter.com/ScyDark",
+        facebook: "",
+        twitch: "https://www.twitch.tv/scydark",
+        youtube: "",
+        instagram: ""
+    },
+    { 
+        name: "Thibu",
+        image: "img/streamers/thibu.jpg",
+        twitter: "https://twitter.com/thibuzor",
+        facebook: "",
+        twitch: "https://www.twitch.tv/thibuzor",
+        youtube: "",
+        instagram: ""
+    },
+    { 
+        name: "Exlelite",
+        image: "img/streamers/exlelite.jpg",
+        twitter: "https://twitter.com/exl_elite06",
+        facebook: "",
+        twitch: "https://www.twitch.tv/exlelite",
+        youtube: "https://www.youtube.com/c/exlelite06",
+        instagram: ""
     }
 ];
 
