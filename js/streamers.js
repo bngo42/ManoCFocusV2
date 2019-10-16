@@ -113,9 +113,9 @@ let streamerData = [
     { 
         name: "Rayane",
         image: "img/streamers/rayane.jpg",
-        twitter: "",
+        twitter: "https://twitter.com/KingOfDurum",
         facebook: "",
-        twitch: "",
+        twitch: "https://www.twitch.tv/llrayanell",
         youtube: "",
         instagram: ""
     },
@@ -138,11 +138,11 @@ let streamerData = [
         instagram: ""
     },
     { 
-        name: "CélestinRL",
-        image: "img/streamers/célestinRL.jpg",
-        twitter: "https://twitter.com/CelestinRL",
-        facebook: "",
-        twitch: "https://www.twitch.tv/CelestinRL",
+        name: "Mangore",
+        image: "img/streamers/mangore.jpg",
+        twitter: "https://twitter.com/MangoreTV",
+        facebook: "https://www.facebook.com/MangoreTV",
+        twitch: "https://www.twitch.tv/mangore",
         youtube: "",
         instagram: ""
     },
@@ -226,6 +226,15 @@ let streamerData = [
         twitch: "https://www.twitch.tv/exlelite",
         youtube: "https://www.youtube.com/c/exlelite06",
         instagram: ""
+    },
+    { 
+        name: "Areliann",
+        image: "img/streamers/areliann.jpg",
+        twitter: "https://twitter.com/areliannn",
+        facebook: "https://www.facebook.com/areliann",
+        twitch: "https://www.twitch.tv/areliann",
+        youtube: "https://www.youtube.com/channel/UChaonIpYNG1TkPVUtzWRjjQ",
+        instagram: "https://www.instagram.com/areliannn"
     }
 ];
 
