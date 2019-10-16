@@ -143,8 +143,8 @@ let streamerData = [
         twitter: "https://twitter.com/MangoreTV",
         facebook: "https://www.facebook.com/MangoreTV",
         twitch: "https://www.twitch.tv/mangore",
-        youtube: "",
-        instagram: ""
+        youtube: "https://www.youtube.com/channel/UC5R3UTlkwLqR87e1ZlSPZgg",
+        instagram: "https://www.instagram.com/mangorefoodtv"
     },
     { 
         name: "KitchAAAA",
