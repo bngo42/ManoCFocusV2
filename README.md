@@ -7,6 +7,10 @@ Frontend fait en HTML/CSS/JS - Backend fait en Node/Express (partie tweets)
 Live Preview: https://bngo42.github.io/ManoCFocusV2
 
 # Screenshots
-![Screenshot1](https://i.imgur.com/2dSnkIq.png)
-![Screenshot2](https://i.imgur.com/5xFkHv3.png)
-![Screenshot3](https://i.imgur.com/nyElHqt.png)
+![Screenshot1](https://i.imgur.com/tcIRLau.png)
+![Screenshot2](https://i.imgur.com/TXCqVPP.png)
+![Screenshot3](https://i.imgur.com/H7T9Dlb.png)
+![Screenshot4](https://i.imgur.com/9t7rHWi.png)
+![Screenshot5](https://i.imgur.com/o8mQ4n8.png)
+![Screenshot6](https://i.imgur.com/mxQsSyb.png)
+![Screenshot7](https://i.imgur.com/vwbPSKZ.png)
