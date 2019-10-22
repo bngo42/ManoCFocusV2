@@ -27,8 +27,8 @@ let streamerData = [
         image: "img/streamers/beyAz.jpg",
         twitter: "https://twitter.com/beyAzCSGO",
         facebook: "",
-        twitch: "",
-        channel: "",
+        twitch: "https://www.twitch.tv/beyazcsgo",
+        channel: "https://www.twitch.tv/beyazcsgo",
         youtube: "",
         instagram: ""
     },
