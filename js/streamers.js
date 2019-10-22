@@ -134,7 +134,7 @@ let streamerData = [
     },
     { 
         name: "Keoz",
-        image: "img/streamers/keoz.jpg",
+        image: "img/streamers/keozz.jpg",
         twitter: "https://twitter.com/KeozBEAST",
         facebook: "",
         twitch: "",
