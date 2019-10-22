@@ -57,8 +57,8 @@ let streamerData = [
         instagram: "https://www.instagram.com/cruelladk"
     },
     { 
-        name: "Lonï",
-        image: "img/streamers/loni.jpg",
+        name: "Ionï",
+        image: "img/streamers/ioni.jpg",
         twitter: "https://twitter.com/Ioni_lol",
         facebook: "",
         twitch: "https://www.twitch.tv/ioni_lol",
@@ -84,7 +84,7 @@ let streamerData = [
         instagram: ""
     },
     { 
-        name: "Skykhouqua",
+        name: "Skykhoqua",
         image: "img/streamers/skykhouqua.jpg",
         twitter: "https://twitter.com/Skykhouqua",
         facebook: "",
