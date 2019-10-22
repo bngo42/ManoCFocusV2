@@ -14,7 +14,7 @@ let inter = setInterval(() => {
 
 function updateStreamerList() {
     streamerData.forEach(user => {
-        if (user.name && user.twitch){
+        if (user.name && user.channel){
             let newBtn = liveButton.cloneNode(true);
             newBtn.innerHTML = user.name;
             newBtn.addEventListener('click', e => {
@@ -22,7 +22,7 @@ function updateStreamerList() {
                 updateLiveStream(name);
                 e.target.classList.add('active');
             });
-            let name = extractName(user.twitch);
+            let name = extractName(user.channel);
             newBtn.classList.remove('hidden');
             if (user.name.toLowerCase() == 'manonolita') {
                 newBtn.classList.add('active');
