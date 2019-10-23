@@ -22,16 +22,16 @@ let streamerData = [
         youtube: "https://www.youtube.com/user/MrPackam",
         instagram: "https://www.instagram.com/los_packam/"
     },
-    { 
-        name: "beyAz",
-        image: "img/streamers/beyAz.jpg",
-        twitter: "https://twitter.com/beyAzCSGO",
-        facebook: "",
-        twitch: "https://www.twitch.tv/beyazcsgo",
-        channel: "https://www.twitch.tv/beyazcsgo",
-        youtube: "",
-        instagram: ""
-    },
+    // { 
+    //     name: "beyAz",
+    //     image: "img/streamers/beyAz.jpg",
+    //     twitter: "https://twitter.com/beyAzCSGO",
+    //     facebook: "",
+    //     twitch: "https://www.twitch.tv/beyazcsgo",
+    //     channel: "https://www.twitch.tv/beyazcsgo",
+    //     youtube: "",
+    //     instagram: ""
+    // },
     { 
         name: "Dwight",
         image: "img/streamers/dwight.jpg",
@@ -132,26 +132,26 @@ let streamerData = [
         youtube: "",
         instagram: ""
     },
-    { 
-        name: "Keoz",
-        image: "img/streamers/keozz.jpg",
-        twitter: "https://twitter.com/KeozBEAST",
-        facebook: "",
-        twitch: "",
-        channel: "",
-        youtube: "",
-        instagram: "https://www.instagram.com/nicolas_dgus"
-    },
-    { 
-        name: "Sneaky",
-        image: "img/streamers/sneaky.jpg",
-        twitter: "https://twitter.com/LOSC_Sneaky",
-        facebook: "",
-        twitch: "https://www.twitch.tv/sneakyfut",
-        channel: "https://www.twitch.tv/sneakyfut",
-        youtube: "https://www.youtube.com/channel/UClym-4YXoF_fqwxkcLJ_TSg",
-        instagram: "https://www.instagram.com/sneaky83"
-    },
+    // { 
+    //     name: "Keoz",
+    //     image: "img/streamers/keozz.jpg",
+    //     twitter: "https://twitter.com/KeozBEAST",
+    //     facebook: "",
+    //     twitch: "",
+    //     channel: "",
+    //     youtube: "",
+    //     instagram: "https://www.instagram.com/nicolas_dgus"
+    // },
+    // { 
+    //     name: "Sneaky",
+    //     image: "img/streamers/sneaky.jpg",
+    //     twitter: "https://twitter.com/LOSC_Sneaky",
+    //     facebook: "",
+    //     twitch: "https://www.twitch.tv/sneakyfut",
+    //     channel: "https://www.twitch.tv/sneakyfut",
+    //     youtube: "https://www.youtube.com/channel/UClym-4YXoF_fqwxkcLJ_TSg",
+    //     instagram: "https://www.instagram.com/sneaky83"
+    // },
     { 
         name: "DRG",
         image: "img/streamers/drg.jpg",
