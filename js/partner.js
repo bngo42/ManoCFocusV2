@@ -210,6 +210,16 @@ let partners = [
         twitch: "https://www.twitch.tv/ubisoft",
         youtube: "https://www.youtube.com/user/UbisoftFR",
         instagram: "https://www.instagram.com/ubisoftfr"
+    },
+    {
+        name: "Riot Games",
+        img: "img/partners/logo-riot.png",
+        url: "https://www.riotgames.com/fr",
+        twitter: "https://twitter.com/RiotGamesFrance",
+        facebook: "https://www.facebook.com/RiotGames",
+        twitch: "https://www.twitch.tv/riotgamesfr",
+        youtube: "https://www.youtube.com/channel/UCJEGvSZnQ1pkVfHO8s5G8hA",
+        instagram: "https://www.instagram.com/riotgames/"
     }
 ];
 
