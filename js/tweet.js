@@ -11,7 +11,6 @@ let tweet_feed = [],
 
 setInterval(() => {
     if (tweet_feed.length == 0 || index >= (tweet_feed.length - 1)) {
-        console.log("loading new tweets...");
         retrieveTweet().then(res => {
             if (res.length == 0){
                 index = 0;
