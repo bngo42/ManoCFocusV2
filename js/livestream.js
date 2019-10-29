@@ -19,10 +19,16 @@ function updateStreamerList() {
             newBtn.innerHTML = user.name;
             newBtn.addEventListener('click', e => {
                 removeActive();
-                updateLiveStream(name);
+                let mediaType = getType(user.channel);
+                if (mediaType == 'twitch'){
+                    updateLiveStream(name);
+                } else if (mediaType == 'youtube'){
+                    updateYoutubeStream(user.channel);
+                }
+
                 e.target.classList.add('active');
             });
-            let name = extractName(user.channel);
+            let name = extractTwitchName(user.channel);
             newBtn.classList.remove('hidden');
             if (user.name.toLowerCase() == 'manonolita') {
                 newBtn.classList.add('active');
@@ -32,7 +38,18 @@ function updateStreamerList() {
     });
 }
 
-function extractName(url) {
+function getType(url) {
+    console.log('url', url);
+    if (/twitch/.test(url)) {
+        return 'twitch';
+    } else if (/youtube/.test(url)) {
+        return 'youtube';
+    } else {
+        return 'no plateform';
+    }
+}
+
+function extractTwitchName(url) {
     return url.replace("https://www.twitch.tv/", "");
 }
 
@@ -45,14 +62,33 @@ function removeActive(){
     }
 }
 
+function updateYoutubeStream(url){
+
+    clearChild();
+
+    let embeder = document.createElement('iframe');
+    embeder.style.width = '100%';
+    embeder.style.height = '480px';
+    embeder.src = url.replace("watch?v=", "embed/");
+    embeder.frameBorder = '0';
+    embeder.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
+    embeder.allowFullscreen = true;
+
+    liveFeed.appendChild(embeder);
+}
+
 function updateLiveStream(channelName){
-    if (liveFeed.childElementCount > 0){
-        liveFeed.removeChild(liveFeed.firstChild);
-    }
+    clearChild();
     new Twitch.Embed("twitch-embed", {
         width: "100%",
         height: 480,
         channel: channelName,
         layout: "video"
     });
+}
+
+function clearChild() {
+    if (liveFeed.childElementCount > 0){
+        liveFeed.removeChild(liveFeed.firstChild);
+    }
 }
