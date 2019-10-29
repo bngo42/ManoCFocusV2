@@ -67,9 +67,11 @@ function updateYoutubeStream(url){
     clearChild();
 
     let embeder = document.createElement('iframe');
+    let channelId = url.replace("https://www.youtube.com/channel/", "");
+    console.log(channelId);
     embeder.style.width = '100%';
     embeder.style.height = '480px';
-    embeder.src = url.replace("watch?v=", "embed/");
+    embeder.src = `https://www.youtube.com/embed/live_stream?channel=${channelId}&autoplay=1`;
     embeder.frameBorder = '0';
     embeder.allow = "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture";
     embeder.allowFullscreen = true;
