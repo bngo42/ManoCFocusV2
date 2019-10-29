@@ -88,7 +88,7 @@ let streamerData = [
         twitter: "https://twitter.com/TsuVideos",
         facebook: "",
         twitch: "https://www.twitch.tv/tsuvideo",
-        channel: "https://www.twitch.tv/tsuvideo",
+        channel: "https://www.youtube.com/channel/UCO1ahLP9kaeQUm18wPdNy0A",
         youtube: "https://www.youtube.com/channel/UCO1ahLP9kaeQUm18wPdNy0A",
         instagram: ""
     },
@@ -134,7 +134,7 @@ let streamerData = [
     },
     { 
         name: "Xnick3lz",
-        image: "",
+        image: "img/streamers/xnick3l.jpg",
         twitter: "https://twitter.com/xnick3lz",
         facebook: "",
         twitch: "https://www.twitch.tv/xnick3lz",
