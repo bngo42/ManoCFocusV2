@@ -167,6 +167,12 @@ body {
     align-items: center;
 }
 
+.parallaxer .logo-title-background {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
 .parallaxer .timer {
     display: inline-block;
     padding: 0 0.8em;
@@ -663,14 +669,16 @@ animation-delay: -0.16s;
     .parallaxer .org-logo {
       width: 50px;  
     }
-    
 
+    .parallaxer .logo-title-background {
+        width: 100%;
+    }
     
     .parallaxer .timer {
         padding: 0 0.8em;
         line-height: 40px;
         background-size: contain;
-        font-size: 12pt;
+        font-size: 10pt;
     }
 
     .parallaxer .profit-section {
