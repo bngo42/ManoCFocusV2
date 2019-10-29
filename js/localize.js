@@ -53,8 +53,8 @@ let localizer = [
          key : "logo-profit",
          value: {
             "FR" : "Au profit de l'association",
-            "EN" : "Au profit de l'association EN",
-            "NL" : "Au profit de l'association NL"
+            "EN" : "For the benefit of the organization",
+            "NL" : "Ten voordele van de organisatie"
          }
       },
       {
@@ -109,24 +109,24 @@ let localizer = [
          key : "title-team",
          value: {
             "FR" : "L'ÉQUIPE",
-            "EN" : "THE TEAM EN",
-            "NL" : "THE TEAM NL"
+            "EN" : "THE TEAM",
+            "NL" : "HET TEAM"
          }
       },
       {
          key : "description1-team",
          value: {
             "FR" : "Découvrez notre équipe",
-            "EN" : "Découvrez notre équipe EN",
-            "NL" : "Découvrez notre équipe NL"
+            "EN" : "Discover our team",
+            "NL" : "Ontdek ons team"
          }
       },
       {
          key : "description2-team",
          value: {
             "FR" : "Ils co-organisent avec nous cet événement",
-            "EN" : "Ils co-organisent avec nous cet événement EN",
-            "NL" : "Ils co-organisent avec nous cet événement NL"
+            "EN" : "They co-organise the event with us",
+            "NL" : "Ze organiseren het evenement samen met ons"
          }
       },
       
@@ -198,8 +198,8 @@ let localizer = [
          key : "networks-description",
          value: {
             "FR" : "Rejoignez nos réseaux sociaux",
-            "EN" : "Rejoignez nos réseaux sociaux EN",
-            "NL" : "Rejoignez nos réseaux sociaux NL"
+            "EN" : "Join our social media",
+            "NL" : "Word lid van onze sociale media"
          }
       },
       {
