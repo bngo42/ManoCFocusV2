@@ -21,6 +21,7 @@
         <div id="content"></div>
         <script>
             let content = document.querySelector('#content');
+            let currentValue = 0;
 
             updateGoal();
             setInterval(updateGoal, 10000);
@@ -28,7 +29,10 @@
             function updateGoal() {
                 fetch('http://manocf-server.herokuapp.com/donations').then(data => {
                     data.json().then(res => {
-                        content.innerHTML = res.current_value + '€';
+                        if (res != null && res.current_value && res.currentValue > currentValue){
+                            currentValue = res.current_value;
+                            content.innerHTML = currentValue + '€';
+                        }
                     });
                 }).catch(console.error)
             }
