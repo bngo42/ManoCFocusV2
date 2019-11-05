@@ -20,6 +20,7 @@
     <body>
         <div id="content"></div>
         <script>
+
             let content = document.querySelector('#content');
             let currentValue = 0;
 
@@ -27,7 +28,7 @@
             setInterval(updateGoal, 10000);
 
             function updateGoal() {
-                fetch('http://manocf-server.herokuapp.com/donations').then(data => {
+                fetch('http://tweets-server.herokuapp.com/donations').then(data => {
                     data.json().then(res => {
                         if (res != null && res.current_value && res.currentValue > currentValue){
                             currentValue = res.current_value;
