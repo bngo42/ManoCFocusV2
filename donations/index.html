@@ -29,8 +29,10 @@
             function updateGoal() {
                 fetch('https://tweets-server.herokuapp.com/donations').then(data => {
                     data.json().then(res => {
-                        console.log(res);
-                        content.innerHTML = currentValue + '€';
+                        if (res.current_value){
+                            console.log(res);
+                            content.innerHTML = res.current_value + '€';
+                        }
                     });
                 }).catch(console.error)
             }
