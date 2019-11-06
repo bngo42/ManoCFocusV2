@@ -24,7 +24,7 @@
             let content = document.querySelector('#content');
 
             updateGoal();
-            setInterval(updateGoal, 10000);
+            setInterval(updateGoal, 5000);
 
             function updateGoal() {
                 fetch('https://tweets-server.herokuapp.com/donations').then(data => {
