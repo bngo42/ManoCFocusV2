@@ -23,7 +23,7 @@
 
             let content = document.querySelector('#content');
             let url = new URL(window.location.href);
-            let username = url.searchParams.get("username");
+            let username = url.searchParams.get("username") || '';
 
             updateGoal(username);
             setInterval(() => {
@@ -31,10 +31,9 @@
             }, 10000);
 
             function updateGoal(name) {
-                fetch(`https://total-donations.herokuapp.com/donations/${name ? name : ''}`).then(data => {
+                fetch(`https://tweets-server.herokuapp.com/donations/${username}`).then(data => {
                     data.json().then(res => {
-                        if (res.current_value){
-                            console.log(res);
+                        if (res){
                             content.innerHTML = res.current_value + '€';
                         }
                     });
