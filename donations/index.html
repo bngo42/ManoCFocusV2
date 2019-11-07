@@ -22,12 +22,16 @@
         <script>
 
             let content = document.querySelector('#content');
+            let url = new URL(window.location.href);
+            let username = url.searchParams.get("username");
 
-            updateGoal();
-            setInterval(updateGoal, 5000);
+            updateGoal(username);
+            setInterval(() => {
+                updateGoal(username)
+            }, 10000);
 
-            function updateGoal() {
-                fetch('https://tweets-server.herokuapp.com/donations').then(data => {
+            function updateGoal(name) {
+                fetch(`https://total-donations.herokuapp.com/donations/${name ? name : ''}`).then(data => {
                     data.json().then(res => {
                         if (res.current_value){
                             console.log(res);
