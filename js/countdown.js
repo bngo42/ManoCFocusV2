@@ -1,5 +1,5 @@
 let countdown = document.querySelector('.countdown');
-let date = new Date("Nov 10, 2019");
+let date = new Date("Nov 9, 2019 12:00:00");
 let now = new Date();
 let diff = (date - now);
 
