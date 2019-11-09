@@ -8,7 +8,7 @@ setInterval(updateProgress, 10000);
 
 function updateProgress() {   
     getCurrentTotal().then(val => {
-        let percentage = calculatePercent(40000, val.current_value);
+        let percentage = calculatePercent(20000, val.current_value);
         setBarPercent(percentage);
         setCurrentLabel(val.current_value);
     }).catch(console.log);
