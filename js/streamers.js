@@ -133,16 +133,6 @@ let streamerData = [
         instagram: ""
     },
     { 
-        name: "Rayane",
-        image: "img/streamers/rayane.jpg",
-        twitter: "https://twitter.com/KingOfDurum",
-        facebook: "",
-        twitch: "https://www.twitch.tv/llrayanell",
-        channel: "https://www.twitch.tv/spawnstudio",
-        youtube: "",
-        instagram: ""
-    },
-    { 
         name: "Xnick3lz",
         image: "img/streamers/xnick3l.jpg",
         twitter: "https://twitter.com/xnick3lz",
@@ -278,7 +268,7 @@ let streamerData = [
         twitter: "https://twitter.com/RomRomanitou",
         facebook: "https://www.facebook.com/RomRomanitou",
         twitch: "https://www.twitch.tv/romanitou",
-        channel: "https://www.twitch.tv/spawnstudio",
+        channel: "https://www.twitch.tv/romanitou",
         youtube: "",
         instagram: ""
     },
