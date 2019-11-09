@@ -93,6 +93,16 @@ let streamerData = [
         instagram: ""
     },
     { 
+        name: "Ex6TenZ",
+        image: "img/streamers/ex6tenzzz.jpg",
+        twitter: "https://twitter.com/Ex6TenZZZ",
+        facebook: "https://www.facebook.com/OfficialEx6TenZ/",
+        twitch: "https://www.twitch.tv/ex6tenz",
+        channel: "https://www.twitch.tv/ex6tenz",
+        youtube: "",
+        instagram: "https://www.instagram.com/ex6tenz1337"
+    },
+    { 
         name: "Skykhoqua",
         image: "img/streamers/skykhoqua.jpg",
         twitter: "https://twitter.com/Skykhouqua",
