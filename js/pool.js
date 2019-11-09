@@ -3,7 +3,7 @@ let barFill = document.querySelector('.bar-fill'),
 
 
 updateProgress();
-setInterval(updateProgress, 1000);
+setInterval(updateProgress, 10000);
 
 
 function updateProgress() {   
