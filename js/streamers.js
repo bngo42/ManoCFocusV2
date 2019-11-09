@@ -88,7 +88,7 @@ let streamerData = [
         twitter: "https://twitter.com/TsuVideos",
         facebook: "",
         twitch: "https://www.twitch.tv/tsuvideo",
-        channel: "https://www.youtube.com/channel/UCO1ahLP9kaeQUm18wPdNy0A",
+        channel: "https://www.youtube.com/watch?v=5omogcF2eOQ",
         youtube: "https://www.youtube.com/channel/UCO1ahLP9kaeQUm18wPdNy0A",
         instagram: ""
     },
