@@ -220,6 +220,46 @@ let partners = [
         twitch: "https://www.twitch.tv/riotgamesfr",
         youtube: "https://www.youtube.com/channel/UCJEGvSZnQ1pkVfHO8s5G8hA",
         instagram: "https://www.instagram.com/riotgames/"
+    },
+    {
+        name: "Viewsonic",
+        img: "img/partners/logo-viewsonic.png",
+        url: "https://www.viewsonic.com/fr",
+        twitter: "https://twitter.com/viewsonicfr",
+        facebook: "https://www.facebook.com/viewsonicfrance",
+        twitch: "",
+        youtube: "https://www.youtube.com/user/viewsonicglobal",
+        instagram: "https://www.instagram.com/viewsonicfrance"
+    },
+    {
+        name: "Uniwan",
+        img: "img/partners/logo-uniwan.png",
+        url: "https://uniwan.be/",
+        twitter: "https://twitter.com/Uniwan",
+        facebook: "https://www.facebook.com/uniwan.be",
+        twitch: "",
+        youtube: "",
+        instagram: ""
+    },
+    {
+        name: "Louvard Game",
+        img: "img/partners/logo-louvard.png",
+        url: "http://www.louvardgame.be",
+        twitter: "https://twitter.com/LouvardGame",
+        facebook: "https://www.facebook.com/LouvardGame",
+        twitch: "",
+        youtube: "",
+        instagram: ""
+    },
+    {
+        name: "Speed seats",
+        img: "img/partners/logo-speedseats.png",
+        url: "https://www.speedseats.eu",
+        twitter: "https://twitter.com/speedseats",
+        facebook: "https://www.facebook.com/Speedseats/",
+        twitch: "",
+        youtube: "",
+        instagram: "https://www.instagram.com/speedseats"
     }
 ];
 
