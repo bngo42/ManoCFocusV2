@@ -16,6 +16,7 @@ function updateProgress() {
 
 function getCurrentTotal() {
     return new Promise((resolve, reject) => {
+        resolve({current_value: 35113});
         fetch('https://tweets-server.herokuapp.com/donations')
             .then(res => res.json())
             .then(resolve)
