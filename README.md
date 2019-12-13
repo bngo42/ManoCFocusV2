@@ -4,7 +4,7 @@ Site internet réalisé à l'occasion de l'événement "Mano Child Focus" réali
 
 Frontend fait en HTML/CSS/JS - Backend fait en Node/Express (partie tweets)
 
-Live Preview: https://bngo42.github.io/ManoCFocusV2
+Live Preview: https://befriendsonline.be/
 
 # Screenshots
 ![Screenshot1](https://i.imgur.com/tcIRLau.png)
